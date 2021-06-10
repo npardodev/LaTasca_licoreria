@@ -25,6 +25,7 @@
     justify-content: center;
     /* align horizontal */
     align-items: center;
+    padding-bottom:10px;
 }
 
 .logo img {
@@ -47,26 +48,30 @@ body {
 
 
 .navb {
-    background-color: rgba(152, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navb .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
+
 }
 
 .navb .menu li {
     list-style: none;
     color: rgb(0, 0, 0);
+    margin-left: 35px;
 }
 
 .navb .menu li a:hover {
     color: rgb(48, 48, 48);
-    text-decoration: underline;
+    border-bottom: 3px solid black;
 }
 
 .navb .menu li a {
@@ -75,54 +80,249 @@ body {
     text-decoration: none;
     width: 100%;
     color: black;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+/* SubMenusNav */
+.subnav{
+    position: relative;
+    text-size-adjust: contain;
+   
+}
+.subnav li {
+    margin-bottom: 8px;
+    
+}
+.subnav li a{
+    text-decoration: none;
+   
 }
 
-.container {
+.subnav-content {
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
     width: 100%;
-    padding: 0.5em;
+    z-index: 1;
+    height: 100px;
+  
+}
+.subnav-content a {
+    text-decoration: none;
+    margin-top: 7px;
+    color: black;
+    
+}
+.subnav:hover .subnav-content{
+    display: flex;
+}
+svg[data-icon='dashicons:arrow-down-alt2'] {
+    bottom: 8px;
+    right:40px;
+    font-size: 1rem;
+}
+/* MenuHamburger */
+.Burger-Menu{
+    display: none;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 25px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.Burger-Menu div{
+    transform-origin: 4px;
+    transition:all 0.3s linear;
+}
+.Burger-Menu div:nth-child(1){
+    width: 30px;
+    height: 4px;
+    background:black;
+}
+.Burger-Menu div:nth-child(2){
+    width: 30px;
+    height: 4px;
+    background:black;
+}
+.Burger-Menu div:nth-child(3){
+    width: 30px;
+    height: 4px;
+    background:black;
 }
 
+.BarraOneBurger{
+   
+    transform: rotate(45deg);
+}
+.BarraTwoBurger{
+   transform:translateX(100%);
+   opacity:0;
+}
+.BarraThreeBurger{
+    
+    transform: rotate(-45deg);
+}
+/* NavMobile */
+.MobileNav{
+    position:fixed;
+    left:0px;
+    top: 0px;
+    transform:translateX(-100%);
+    width: 60%;
+    height: 100vh;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: lightblue;
+    transition:all 0.3s linear;
+}
+.MobileNav.active{
+    transform:translateX(0%);
+    transition:all 0.3s linear;
+}
+.subnavMobile{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+   
+}
+.subnavMobile li{
+    list-style: none;
+    
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 15px;
+    
+}
+.subnavMenuBurger{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 10px;
+    width: 100%;
+
+}
+.subnavMenuBurger li a {
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+.subnavMobile li a{
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color:#232323;
+}
+.subnav-content-Mobile{
+    position: relative;
+    display:none;
+   
+}
+.SubNav-links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.SubNav-links a{
+    text-decoration: none;
+    color:#232323;
+}
+.subnav-content-Mobile a{
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #232322;
+}
+
+
+.BottomOpenSUbMenus{
+    width: 50px;
+    height: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* RedesSocialesIcons */
+.IconsNav{
+    position:fixed;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content:color;
+    align-items: center;
+    margin-bottom: 5px;
+    right:0px;
+    top: 50%;
+}
+.IconsNav li {
+    list-style: none;
+    margin-top: 7px;
+    cursor:pointer;
+}
+svg[data-icon='dashicons:arrow-down-alt2'] {
+    z-index: -1;
+}
+svg[data-icon='dashicons:arrow-down-alt2'].active {
+    z-index: -1;
+    transform: rotate(90deg) !important;
+}
+
+
+svg[data-icon='uil:instagram'] {
+    font-size: 2rem;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color:#fff;
+    border-radius: 10px;
+}
+svg[data-icon='logos:facebook'] {
+    font-size: 2rem;
+  
+}
 
 /* ----------------------------------
 ------------- Nosotros --------------
 ------------------------------------*/
 
 
-.nosotros {
-    text-align: center;
-    background-color: bisque;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-.nosotros {
-    text-align: center;
-    display: flex;
-}
 
 
 /* ----------------------------------
 --------------- Footer --------------
 ------------------------------------*/
-=
 
 
-footer {
-    display: flex;
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background-color: rgb(166, 163, 163);
-}
 
-footer h4 {
-    font-size: 1rem;
-    font-weight: 600;
-}
+/* ----------------------------------
+--------------- Media Querys --------------
+------------------------------------*/
 
-footer p {
-    font-size: 0.8rem;
-    font-weight: 300;
+@media screen and (max-width:768px) {
+    /* ---- Navegacion ----- */
+    .navb{
+        justify-content: flex-end;
+    }
+    .navb .menu{
+        display:none;
+    }
+    .Burger-Menu{
+        display:flex;
+
+    }
+    
+    
 }
