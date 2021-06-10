@@ -39,6 +39,7 @@ body {
     height: 100vh;
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -131,7 +132,7 @@ svg[data-icon='dashicons:arrow-down-alt2'] {
     justify-content: space-around;
     flex-direction: column;
     height: 25px;
-    margin-right: 50px;
+    margin-right: 15px;
     cursor: pointer;
 }
 .Burger-Menu div{
