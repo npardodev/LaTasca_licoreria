@@ -26,7 +26,6 @@ export const RouterApp= () => {
     <Switch>
         <Route exact path="/">
             {/* <Home/> */}
-            <h1>Seccion Home</h1>
         </Route>
         <Route exact path={appPaths.OTHER_PRODUCTS_PATH}>
             <ItemListContainer/>

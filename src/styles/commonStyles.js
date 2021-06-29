@@ -1,7 +1,8 @@
 export const commonStyles = {
 
     fonts: {
-        primary: 'arial',
+        primary: "'Poppins', sans-serif",
+        secondary: "''Roboto', sans-serif",
     },
     primary: {
         light: '#ffffff',
@@ -11,7 +12,7 @@ export const commonStyles = {
     },
     secondary: {
         light: '#ffffff',
-        main: '#0000000', //negro
+        main: '#000000', //negro
         dark: '#ffffff',
         contrastText: '#ffffff',
     },

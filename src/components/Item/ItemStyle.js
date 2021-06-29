@@ -7,9 +7,9 @@ export const ItemStyle = theme => {
     return ({
         card: {
             background: '#ffff',
-            width: '90%',
+            width: '14rem',
             height: '100%',
-            borderRadius: '20px',
+            borderRadius: '25px',
             transition: '0.5s',
             boxShadow: 'rgb(70 79 184 / 80%) 0px 10px 36px -25px',
             alignItems: 'center',
@@ -17,7 +17,7 @@ export const ItemStyle = theme => {
             display: 'flex',
             flexDirection: 'column',
             backgroundColor: 'white',
-
+            fontFamily: commonStyles.fonts.secondary,
 
             ' & img': {
                 width: 'clamp(5em, 5.5em, 7em)',
@@ -30,12 +30,23 @@ export const ItemStyle = theme => {
                 fontWeight: '500',
             },
 
-            ' & p': {
-                padding: '0em',
-                fontSize: '0.8em',
+            ' & h3': {
+                paddingTop: '0.5rem',
+                fontSize: '0.95em',
                 margin: '0',
+                fontWeight: '600',
 
             },
+
+            ' & h5': {
+                fontWeight: '300',
+                padding: '0.5rem',
+                fontSize: '0.8em',
+                margin: '0',
+                color: '#B03131',
+                textDecoration: 'line-through',
+            },
+
             '& cardImg': {
                 backgroundColor: 'red',
             },
@@ -44,7 +55,28 @@ export const ItemStyle = theme => {
         cardInfo: {
             width: '100%',
             backgroundColor: commonStyles.tercery.main,
+            paddingBottom: '1rem',
+
+            '&>div': {
+                alignItems: 'center',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                gap: '1rem',
+            },
+        },
+        Button: {
+            color: commonStyles.tercery.main,
+            backgroundColor: commonStyles.secondary.main,
+            width: '70%',
+            borderRadius: '25px',
+            '&:hover': {
+                backgroundColor: '#8e8484',
+            },
+
 
         }
+
     })
 };

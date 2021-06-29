@@ -1,4 +1,3 @@
-import React from 'react';
 import { commonStyles } from './../../styles/commonStyles.js';
 
 export const FooterStyle = theme => {
@@ -10,6 +9,20 @@ export const FooterStyle = theme => {
             padding: '1rem',
             backgroundColor: commonStyles.primary.main,
             width: '100%',
+            fontfamily: commonStyles.fonts.primary,
+
+            '& h1': {
+                fontWeight: '600',
+                fontSize: '2rem',
+                color: commonStyles.secondary.main,
+            },
+
+            '& h2': {
+                fontWeight: '300',
+                fontSize: '1.5rem',
+                color: commonStyles.secondary.main,
+            },
+
 
             '& h4': {
                 fontWeight: '600',
@@ -22,18 +35,29 @@ export const FooterStyle = theme => {
                 color: 'white',
 
             }
+
         },
         footerColumns: {
             display: "flex",
             justifyContent: "space-around",
             alignItems: "center",
+            textAlign: "center",
         },
 
-        Icon: {
+        icons: {
             fontSize: '1rem',
+            color: 'white',
+        },
+
+        footerLogo: {
+            '& img': {
+                width: 'clamp(3em, 5em, 6em)',
+                height: ' clamp(3em, 5em, 6em)',
+
+            }
+
+
         }
-
-
 
     })
 };

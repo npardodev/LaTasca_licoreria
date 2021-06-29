@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
-import {Counter} from '../Counter/Counter.js';
 import { ItemStyle } from './ItemStyle.js'
 import { makeStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 import { useParams, Link, useHistory, useLocation} from 'react-router-dom';
+import { commonStyles } from './../../styles/commonStyles.js';
 
 const useStyle = makeStyles ((theme) => ItemStyle(theme));
 
@@ -16,11 +17,10 @@ export const Item = ({item , onClick, onFocus}) => {
 
     const {id} = useParams();
 
-    /*
     useEffect(() => {
-        ;
-    }, [])
-    */
+        console.log("2");
+    }, [id])
+
 
     const handlerClick = (e) =>{ 
         e.preventDefault();
@@ -37,9 +37,12 @@ export const Item = ({item , onClick, onFocus}) => {
                 <img src={item.img.src} alt={item.img.alt} onClick={(e) => handlerClick(e)} />
             </div>
             <div className= {classes.cardInfo}>
-                <h4>{`$${item.price}`}</h4>
-                <p>{item.descrip}</p>
-                {/* <Counter stock= {item.stock} initial={0} /> */}
+                <h3>{item.title}</h3>
+                <div>
+                    <h4>{`$${item.price}`}</h4>
+                    <h5>{`$999,00`}</h5>
+                </div>
+                <Button className= {classes.Button}>Ver más</Button>
             </div>
 
         </div>
