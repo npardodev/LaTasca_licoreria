@@ -1,7 +1,9 @@
 import React from 'react'
-import { CarruselHome } from '../components/Home/CarruselHome/CarruselHome'
+
 import styled from 'styled-components'
-import { ProductosCarrusel } from '../components/Home/ProductosCarrusel/ProductosCarrusel'
+import { ProductosCarrusel } from '../components/Home/productos_carrusel/ProductosCarrusel'
+import { Header } from '../components/Home/fondo_and_info/Header'
+import { Marcas } from '../components/Home/nuestras_marcas/Marcas'
 
 const HomeWiew = () => {
     const productos = [
@@ -40,9 +42,9 @@ const HomeWiew = () => {
 
     return (
         <HomeContainer>
-            <CarruselHome/>
+            <Header/>
             <ProductosCarrusel productos={productos}/>
-
+            <Marcas/>
             
 
         </HomeContainer>

@@ -24,6 +24,7 @@ export const DivContentLogo = styled.div`
 `;
 
 export const DivLogo = styled.div`
+    height: 100%;
     img{
         height: 120px;
     }

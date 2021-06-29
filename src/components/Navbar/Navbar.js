@@ -4,9 +4,9 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
 import { Link } from 'react-router-dom'
-import LogoLico from '../../img/Logo.png'
-import IconInstagram from '../../img/IconoInstagram.png'
-import IconFacebook from '../../img/IconoFacebook.png'
+import LogoHeader from '../../assets/img/LogoHeader.png'
+import IconInstagram from '../../assets/img/IconoInstagram.png'
+import IconFacebook from '../../assets/img/IconoFacebook.png'
 
 
 
@@ -31,7 +31,7 @@ const Navbar = () => {
           <Header>
             <DivContentLogo>
                 <DivLogo>
-                    <img src={LogoLico} alt="Logo"/>
+                    <img src={LogoHeader} alt="Logo"/>
                 </DivLogo>
                 <H2TituloLogo>
                     LA TASCA
