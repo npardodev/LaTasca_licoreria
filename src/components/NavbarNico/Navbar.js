@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {CartWidget} from '../../components/CartWidget/CartWidget';
+import {CartWidget} from '../CartWidget/CartWidget';
 import {Link } from 'react-router-dom';
 import { makeStyles, Button} from '@material-ui/core';
 import { NavBarStyle } from './NavBarStyle.js';

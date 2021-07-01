@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {DropdownItem} from './DropdownItem.js';
 import {NavBarStyle} from './NavBarStyle.js';
 import { makeStyles } from '@material-ui/core';
-import {categories} from './../../data/categories.js';
+import {categories} from '../../data/categories.js';
 
 const useStyle = makeStyles ((theme) => NavBarStyle(theme));
 
