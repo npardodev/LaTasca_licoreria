@@ -34,7 +34,7 @@ export const DivMarcasContainF = styled.div`
 
 export const DivContentMarcas = styled.div`
 
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;

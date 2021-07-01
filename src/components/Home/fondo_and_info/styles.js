@@ -26,10 +26,11 @@ export const H4TituloInfo = styled.h4`
 export const DivInfoNosotrosContent = styled.div`
 
     display: flex;
-    width: 90%;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 
 `;
 export const DivInfoNosotros = styled.div`
@@ -37,20 +38,25 @@ export const DivInfoNosotros = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 320px;
+    margin-top: 20px;
     div{
         margin-bottom: 10px;
         height: 45px;
         width: 45px;
-        object-fit: cover;
+        background-size: cover;
         background-repeat:no-repeat;
     }
     h5{
         font-size: 1.2em;
         margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 200px;
     }
     p{
         text-align: center;
-        width: 50%;
+        width: 60%;
     }
 `;
 

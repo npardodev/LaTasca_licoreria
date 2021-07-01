@@ -4,9 +4,9 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
 import { Link } from 'react-router-dom'
-import LogoHeader from '../../assets/img/LogoHeader.png'
-import IconInstagram from '../../assets/img/IconoInstagram.png'
-import IconFacebook from '../../assets/img/IconoFacebook.png'
+import LogoHeader from '../../assets/img/IconosHome/LogoHeader.png'
+import IconInstagram from '../../assets/img/IconosHome/IconoInstagram.png'
+import IconFacebook from '../../assets/img/IconosHome/IconoFacebook.png'
 
 
 
