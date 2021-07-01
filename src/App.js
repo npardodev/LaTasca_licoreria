@@ -1,34 +1,17 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import './App.css';
+import React from 'react';
+import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer.js';
+import {RouterApp} from './router/RouterApp.js';
+import {Footer} from './components/Footer/Footer.js';
 
-import Navbar  from "./components/Navbar/Navbar";
-import HomeWiew from './layout/HomeWiew'
+import { BrowserRouter} from 'react-router-dom';
 
+const App = props => {
 
-
-
-
-function App() {
-  return (
-    <> 
-      <Router>
-        <Navbar/>
-        <Switch>
-        
-          <Route exact path="/">
-            <HomeWiew />
-          </Route>
-          <Route exact path="*">
-            
-          </Route>
-        </Switch>
-      </Router>
-    </>
-
-  );
+  return <BrowserRouter>
+            <RouterApp/>
+            <Footer/>
+      </BrowserRouter>
 }
 
 export default App;
