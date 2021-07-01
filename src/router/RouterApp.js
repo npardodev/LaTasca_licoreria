@@ -7,8 +7,8 @@ import { ItemDetail } from '../components/ItemDetail/ItemDetail.js';
 import { ItemListContainer } from '../components/ItemListContainer/ItemListContainer.js';
 import { ItemDetailContainer } from '../components/ItemDetailContainer/ItemDetailContainer.js';
 import {CustomNotFound} from '../components/CustomComponents/CustomNotFound.js'
-import Navbar  from "./components/Navbar/Navbar";
-import HomeWiew from './layout/HomeWiew'
+import Navbar  from "../components/Navbar/Navbar";
+import HomeWiew from '../layout/HomeWiew'
 export const appPaths = {
     
     ALL_PRODUCTS_PATH: '/products',

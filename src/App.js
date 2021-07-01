@@ -1,4 +1,4 @@
-import './App.css';
+
 import React from 'react';
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer.js';
 import {RouterApp} from './router/RouterApp.js';
