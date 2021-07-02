@@ -1,12 +1,10 @@
 import React from 'react';
 
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import { useParams, useHistory} from 'react-router-dom';
-import { ItemDetail } from '../components/ItemDetail/ItemDetail.js';
+import { Switch, Route } from 'react-router-dom';
+// import { useParams, useHistory} from 'react-router-dom';
+// import { ItemDetail } from '../components/ItemDetail/ItemDetail.js';
 
-import { ItemListContainer } from '../components/ItemListContainer/ItemListContainer.js';
-import { ItemDetailContainer } from '../components/ItemDetailContainer/ItemDetailContainer.js';
-import {CustomNotFound} from '../components/CustomComponents/CustomNotFound.js'
+
 import Navbar  from "../components/Navbar/Navbar";
 import HomeWiew from '../layout/HomeWiew'
 export const appPaths = {
