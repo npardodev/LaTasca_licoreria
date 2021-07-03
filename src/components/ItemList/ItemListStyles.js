@@ -1,7 +1,3 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import { green } from '@material-ui/core/colors';
-
 export const ItemListStyles = theme => {
 
     return ({

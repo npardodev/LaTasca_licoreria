@@ -1,5 +1,3 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
 import { commonStyles } from './../../styles/commonStyles.js';
 
 export const ItemStyle = theme => {
@@ -32,7 +30,7 @@ export const ItemStyle = theme => {
 
             ' & h3': {
                 paddingTop: '0.5rem',
-                fontSize: '0.95em',
+                fontSize: '1.1em',
                 margin: '0',
                 fontWeight: '600',
             },

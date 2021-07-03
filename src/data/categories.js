@@ -15,8 +15,8 @@ export const categories = {
         name: 'Licores',
         id: '4'
     },
-    PLACAS_VIDEO: {
-        name: 'Placas de video',
+    OTHERS: {
+        name: 'Otros',
         id: '5'
     }
 };

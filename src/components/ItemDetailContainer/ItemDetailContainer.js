@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { ItemDetailContainerStyle } from './ItemDetailContainerStyle'
 import { Alert } from '@material-ui/lab';
 import {Snackbar} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
 import { myProducts } from './../../data/myProducts.js';
-import { useParams, useHistory, useLocation} from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 
-const useStyle = makeStyles((theme) => ItemDetailContainerStyle(theme));
 
 //Creamos la promise emulando la llamada al backend
 const myPromise = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => 
-        resolve(myProducts), 3000)
+        resolve(myProducts), 100)
     })
 }
 
@@ -24,26 +21,21 @@ export const ItemDetailContainer = () => {
     const [productData, setProductData] = useState('');
     const [error, setError] = useState('');
     const [showError, setShowError] = useState(false);
-
-    const getItems = () => {
-        console.log(idItem);
+    
+    useEffect(() => {
         myPromise().then(data => {
-            console.log(idItem);
-            const filterData = data.filter(item => item.id === idItem);
-            //setProductData(filterData? filterData: data);
-            console.log(data);
-            setProductData( data[1]);// Hardcoded
+            const filterData = data.filter(function(item) {
+                return item.category.id === String(idCat) && item.id === Number(idItem);
+            });  
+            setProductData(filterData[0]);
 
         });
         myPromise().catch(error => {
             setError(error);
             setShowError(true);
         });
-    }
 
-    useEffect(() => {
-        getItems()
-    }, [idItem]);
+    }, []);
 
     return <>
        

@@ -1,4 +1,3 @@
-import React from 'react';
 import { commonStyles } from './../../styles/commonStyles.js';
 
 export const commonComponentStyle = theme => {
@@ -16,6 +15,7 @@ export const commonComponentStyle = theme => {
             width: '100%',
             height: '100vh',
             wrap: 'wrap',
+            top: '10%',
             ' & h2': {
                 justifyItems: 'center',
                 justifyContent: 'center',

@@ -1,96 +1,87 @@
-import React from 'react';
-
-
 export const ItemDetailStyle = theme => {
 
     return ({
-        productItem: {
+        section: {
+            witdh: '100%',
+            heigth: '100vh',
 
-            padding: '2em',
+        },
+        productItem: {
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',
             gridGap: '1em',
             backgroundColor: '#FFFFF',
-            margin: '1rem',
-            padding: '3rem',
+            margin: '2em',
+            padding: '3em',
+
 
             ' & hover': {
                 width: '100%',
                 height: 'auto',
             },
-            ' & productDetails': {
+
+            ' & img': {
+                width: 'clamp(10em, 14em, 16em)',
+                height: ' clamp(16em, 22em, 23em)',
+
+                display: 'block',
+                margin: 'auto',
+            },
+
+            '&productDetails': {
                 display: 'flex',
                 flexDirection: 'column',
+                flewWrap: 'wrap',
             }
-        },
-
-        img: {
-            width: '100%',
-            maxHeight: '50%',
         },
 
         productDetails: {
             '& h3': {
                 textAlign: 'start',
-                padding: '1rem',
-                fontSize: '1.5rem',
+                padding: '0.4rem',
                 fontWeight: '600',
-                color: '#464EB8',
+                color: 'black',
+                fontSize: '2.2em',
+                paddingBottom: '1em',
+
             },
 
             '& h4': {
                 textAlign: 'start',
                 paddingLeft: '1rem',
-                paddingTop: '0.5rem',
-                fontSize: '1.2rem',
+                padding: '0.5em',
                 fontWeight: '100',
+            },
+
+            '& h6': {
+                fontWeight: '300',
             },
 
             '& p': {
                 textAlign: 'start',
-                textAlign: 'justify',
                 textjustify: 'inter-word',
-                padding: '1rem',
+                padding: '1em',
                 marginRight: '20%',
                 fontSize: '1rem',
                 fontWeight: '100',
                 color: '#706f6f',
+                bottom: '10%',
             },
 
-
-            ' & button': {
-                width: '25%',
-                fontSize: '1rem',
-                color: '#ffff',
-                alignItems: 'center',
-                textAlign: 'center',
-                margin: '2 rem',
-                border: '#a89283',
-                padding: '0.3 rem',
-                marginLeft: '1rem',
-                paddingTop: '0.5rem',
-            },
-
-            '& div': {
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                width: '40%',
-                paddingBottom: '0.8rem',
-
-
-
-            }
 
         },
 
         actualPrice: {
-            fontSize: '1rem'
+            textDecoration: 'none',
+            fontSize: '1.2em',
+
         },
 
         offerPrice: {
-            fontSize: '12rem',
             textDecoration: 'line-through',
+            fontSize: '0.9em',
+            padding: '1em',
+
         },
 
         CustomSelectComponent: {
@@ -100,7 +91,19 @@ export const ItemDetailStyle = theme => {
             marginLeft: ' 1rem',
             fontSize: '0.7rem',
             border: 'none',
-        }
+        },
+
+        optionDetails: {
+            display: 'flex',
+            flexDirection: 'row',
+            flewWrap: 'nowrap',
+            justifyContent: 'start',
+            textAlign: 'start',
+            gap: '2rem',
+            padding: '1em',
+
+        },
+
 
 
     })

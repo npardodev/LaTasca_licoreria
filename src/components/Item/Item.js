@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { ItemStyle } from './ItemStyle.js'
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
-import { useParams, useHistory, useLocation} from 'react-router-dom';
+import { useParams, useHistory} from 'react-router-dom';
 
 const useStyle = makeStyles ((theme) => ItemStyle(theme));
 
@@ -10,20 +10,17 @@ export const Item = ({item , onClick, onFocus}) => {
 
     const classes = useStyle();
     const history = useHistory();
-    const location = useLocation();
     const idItem = item.id;
-    const idCategory = item.id;
+    const idCategory = item.category.id;
 
     const {id} = useParams();
 
     useEffect(() => {
-        console.log("2");
     }, [id])
-
 
     const handlerClick = (e) =>{ 
         e.preventDefault();
-        history.push(`${location.pathname}/${idCategory}/${idItem}`);
+        history.push(`/products/${idCategory}/${idItem}`);
     }
 
     const handlerFocus = () =>{

@@ -1,14 +1,10 @@
 import React from 'react'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-
-
-
 import { Link } from 'react-router-dom'
 import LogoHeader from '../../assets/img/IconosHome/LogoHeader.png'
 import IconInstagram from '../../assets/img/IconosHome/IconoInstagram.png'
 import IconFacebook from '../../assets/img/IconosHome/IconoFacebook.png'
-
-
+import { categories }  from '../../data/categories.js';
 
 
 import 
@@ -41,7 +37,7 @@ const Navbar = () => {
             <NavNavbar>
                 <UlLinksNavbar>
                   
-                    <LiLinksNavbar><Link to="/about">Vinos </Link> <ArrowDropDownIcon/>
+                    <LiLinksNavbar><Link to={`/products/${categories.WINES.id}`}>Vinos </Link> <ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
@@ -50,21 +46,21 @@ const Navbar = () => {
                     </LiLinksNavbar>
                        
                    
-                    <LiLinksNavbar><Link to="/about">Cervezas</Link><ArrowDropDownIcon/>
+                    <LiLinksNavbar><Link to={`/products/${categories.BEERS.id}`}>Cervezas</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                         </DivSubMenu>
                     </LiLinksNavbar>
-                    <LiLinksNavbar><Link to="/about">Whiskys</Link><ArrowDropDownIcon/>
+                    <LiLinksNavbar><Link to={`/products/${categories.WHISKY.id}`}>Whiskys</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                         </DivSubMenu>
                     </LiLinksNavbar>
-                    <LiLinksNavbar><Link to="/about">Otros productos</Link><ArrowDropDownIcon/>
+                    <LiLinksNavbar><Link to={`/products/${categories.OTHERS.id}`}>Otros productos</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
