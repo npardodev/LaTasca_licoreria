@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Grid } from '@material-ui/core';
+=======
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
 import { commonStyles } from './../../styles/commonStyles.js';
 
 export const ItemStyle = theme => {
@@ -7,8 +10,13 @@ export const ItemStyle = theme => {
     return ({
         card: {
             background: '#ffff',
+<<<<<<< HEAD
             width: '14rem',
             height: '100%',
+=======
+            width: '280px',
+            height: '330px',
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             borderRadius: '25px',
             transition: '0.5s',
             boxShadow: 'rgb(70 79 184 / 80%) 0px 10px 36px -25px',
@@ -18,12 +26,20 @@ export const ItemStyle = theme => {
             flexDirection: 'column',
             backgroundColor: 'white',
             fontFamily: commonStyles.fonts.secondary,
+<<<<<<< HEAD
 
+=======
+            justifyContent: 'space-between',
+            bottom: '0',
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             ' & img': {
                 width: 'clamp(5em, 5.5em, 7em)',
                 height: ' clamp(7em, 9em, 10em)',
                 cursor: 'pointer',
+<<<<<<< HEAD
 
+=======
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             },
             ' & h4': {
                 fontSize: '0.9em',
@@ -32,10 +48,16 @@ export const ItemStyle = theme => {
 
             ' & h3': {
                 paddingTop: '0.5rem',
+<<<<<<< HEAD
                 fontSize: '0.95em',
                 margin: '0',
                 fontWeight: '600',
 
+=======
+                fontSize: '1.1em',
+                margin: '0',
+                fontWeight: '600',
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             },
 
             ' & h5': {
@@ -51,12 +73,23 @@ export const ItemStyle = theme => {
                 backgroundColor: 'red',
             },
         },
+<<<<<<< HEAD
 
         cardInfo: {
             width: '100%',
             backgroundColor: commonStyles.tercery.main,
             paddingBottom: '1rem',
 
+=======
+        cardImg: {
+            width: '70%',
+            height: '40%',
+        },
+        cardInfo: {
+            width: '100%',
+            backgroundColor: commonStyles.tercery.main,
+            padding: '1em',
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             '&>div': {
                 alignItems: 'center',
                 textAlign: 'center',
@@ -64,6 +97,11 @@ export const ItemStyle = theme => {
                 flexDirection: 'row',
                 justifyContent: 'center',
                 gap: '1rem',
+<<<<<<< HEAD
+=======
+                padding: '1em',
+
+>>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             },
         },
         Button: {

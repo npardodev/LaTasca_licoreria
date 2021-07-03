@@ -1,4 +1,3 @@
-import React from 'react';
 import { commonStyles } from './../../styles/commonStyles.js';
 
 export const commonComponentStyle = theme => {
@@ -12,33 +11,47 @@ export const commonComponentStyle = theme => {
             justifyItems: 'center',
             justifyContent: 'center',
             backgroundColor: 'white',
-            justifyContent: 'center',
             alignItems: 'center',
+            width: '100%',
+            height: '100vh',
+            wrap: 'wrap',
+            top: '10%',
             ' & h2': {
-                top: '1rem',
                 justifyItems: 'center',
                 justifyContent: 'center',
                 alignItems: 'center',
-                fontSize: '2.2em',
-                color: commonStyles.primary.main
+                textAlign: 'center',
+                fontSize: '2.8em',
+                color: commonStyles.primary.main,
             },
             ' & h3': {
+                padding: '1em',
+                textAlign: 'center',
                 justifyItems: 'center',
                 justifyContent: 'center',
                 alignItems: 'center',
-                fontWeight: '600',
-                fontSize: '1.3em',
+                fontWeight: '300',
+                fontSize: '2.2em',
                 color: commonStyles.secondary.main
             },
             ' & img': {
-                width: 'clamp(16em, 18em, 20em)',
-                heigth: 'clamp(16em, 18em, 20em)',
-
+                width: 'clamp(5em, 12em, 15em)',
+                heigth: 'clamp(5em, 12em, 15em)',
+                justifyItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: 'white',
+                alignItems: 'center',
+                padding: '1em',
+                margin: '1em',
             },
             '& Button': {
-                backgroundColor: commonStyles.primary.main,
+                padding: '1em',
+                margingTop: '1em',
+                fontWeight: '600',
+                backgroundColor: commonStyles.secondary.main,
+                color: 'white',
                 '&:hover': {
-                    backgroundColor: commonStyles.primary.dark,
+                    backgroundColor: commonStyles.secondary.dark,
                 }
 
             }

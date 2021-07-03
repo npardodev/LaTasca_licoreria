@@ -45,8 +45,6 @@ const HomeWiew = () => {
             <Header/>
             <ProductosCarrusel productos={productos}/>
             <Marcas/>
-            
-
         </HomeContainer>
     )
 }

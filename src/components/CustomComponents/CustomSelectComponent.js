@@ -9,7 +9,7 @@ export const CustomSelectComponent = ({options, value, name, color, actionChange
     const [selectValue, setSelectValue] = useState(value ?? ''); 
 
     useEffect(() =>{
-        setSelectValue((value ?? ''), [value]);
+        setSelectValue((value ?? ''), value);
     });       
 
     const handleFocus = () => {
@@ -30,8 +30,6 @@ export const CustomSelectComponent = ({options, value, name, color, actionChange
         <Select
             labelId="SelectComp"
             id="SelectComp"
-            value={4}
-            onChange={handleChange}
             name={name}
             value={selectValue}    
             onFocus={handleFocus}

@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
-import { myProducts } from './../../data/myProducts.js';
 import {Snackbar} from '@material-ui/core';
-import {IconButton, Container} from '@material-ui/core';
-import {CloseIcon} from '@material-ui/icons';
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert } from '@material-ui/lab';
 
 
 const TIME_DURATION_MSG = 5000;

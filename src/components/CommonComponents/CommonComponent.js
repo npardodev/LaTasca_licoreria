@@ -5,11 +5,6 @@ import { commonComponentStyle } from './commonComponentStyle.js'
 
 const useStyle = makeStyles ((theme) => commonComponentStyle(theme));
 
-const commonStyles = {
-    color: 'white',
-    fontSize: '1em',
-    fontWeight: 'bold',
-}
 
 export const CommonComponent = ({title, subtitle, image, alt, buttonLabel, action}) => {
 
@@ -18,16 +13,14 @@ export const CommonComponent = ({title, subtitle, image, alt, buttonLabel, actio
     const commonAction = () => {
         action();
     }
-
     return (
         <>
         <section className={classes.container}>
-            <div>
                 <h2> {title} </h2>
                 <h3> {subtitle} </h3>
                 <img src={image} alt={alt} />
-            </div>
             <Button variant="contained" onClick={commonAction} >{buttonLabel}</Button>
+
         </section>
 
     </>

@@ -23,16 +23,17 @@ export const FooterStyle = theme => {
                 color: commonStyles.secondary.main,
             },
 
-
             '& h4': {
                 fontWeight: '600',
-                fontSize: '1rem',
+                fontSize: '1.3em',
+                padding: '0.5em',
                 color: 'white',
             },
             '& h5': {
                 fontWeight: '300',
-                fontSize: '0.8rem',
+                fontSize: '0.9em',
                 color: 'white',
+                padding: '0.4em',
 
             }
 
@@ -55,8 +56,10 @@ export const FooterStyle = theme => {
                 height: ' clamp(3em, 5em, 6em)',
 
             }
-
-
+        },
+        footerIcons: {
+            alignItems: "center",
+            textAlign: "center",
         }
 
     })

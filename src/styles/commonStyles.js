@@ -13,7 +13,7 @@ export const commonStyles = {
     secondary: {
         light: '#ffffff',
         main: '#000000', //negro
-        dark: '#ffffff',
+        dark: '#212121',
         contrastText: '#ffffff',
     },
     tercery: {

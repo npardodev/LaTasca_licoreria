@@ -1,4 +1,9 @@
 import { categories } from './categories.js';
+import img1 from '../assets/img/wines/vino1.png'
+import img2 from '../assets/img/wines/vino2.png'
+import img3 from '../assets/img/wines/vino3.jpg'
+import img4 from '../assets/img/wines/vino4.png'
+
 
 export const myProducts = [{
         id: 1,
@@ -7,7 +12,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 55000,
         img: {
-            src: './img/wines/vino1.png',
+            src: img1,
             alt: "Imagen vino"
         },
         category: categories.WINES,
@@ -20,7 +25,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino2.png',
+            src: img2,
             alt: "Imagen vino"
         },
         category: categories.BEERS,
@@ -33,7 +38,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino3.jpg',
+            src: img3,
             alt: "Imagen vino"
         },
         category: categories.BEERS,
@@ -46,7 +51,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino4.png',
+            src: img4,
             alt: "Imagen vino"
         },
         category: categories.WHISKY,
@@ -59,7 +64,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 55000,
         img: {
-            src: './img/wines/vino1.png',
+            src: img1,
             alt: "Imagen vino"
         },
         category: categories.WINES,
@@ -72,7 +77,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino2.png',
+            src: img2,
             alt: "Imagen vino"
         },
         category: categories.BEERS,
@@ -85,7 +90,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino3.jpg',
+            src: img3,
             alt: "Imagen vino"
         },
         category: categories.BEERS,
@@ -98,7 +103,7 @@ export const myProducts = [{
         longDescipt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, vero cum corrupti iusto officia quis voluptatem totam dicta? Accusantium sunt vel ex non voluptas recusandae dicta rerum iste atque sapiente!",
         price: 122000,
         img: {
-            src: './img/wines/vino4.png',
+            src: img4,
             alt: "Imagen vino"
         },
         category: categories.WHISKY,
