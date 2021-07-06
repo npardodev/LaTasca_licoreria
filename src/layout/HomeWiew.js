@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect}from 'react'
+import { useSelector } from 'react-redux'
 
 import styled from 'styled-components'
 import { ProductosCarrusel } from '../components/Home/productos_carrusel/ProductosCarrusel'
@@ -6,36 +7,12 @@ import { Header } from '../components/Home/fondo_and_info/Header'
 import { Marcas } from '../components/Home/nuestras_marcas/Marcas'
 
 const HomeWiew = () => {
-    const productos = [
-        {
-            id:1,
-            img:'url',
-            name:'Titulo de producto',
-            price:99.00,
-            discount:120.00,
-        },
-        {
-            id:2,
-            img:'url',
-            name:'Titulo de producto',
-            price:99.00,
-            discount:120.00,
-        },
-        {
-            id:3,
-            img:'url',
-            name:'Titulo de producto',
-            price:99.00,
-            discount:120.00,
-        },
-        {
-            id:4,
-            img:'url',
-            name:'Titulo de producto',
-            price:99.00,
-            discount:120.00,
-        },
-    ]
+    
+    const productos = useSelector(store => store.productsApi.array)
+    console.log(productos)
+
+    
+   
    
 
 

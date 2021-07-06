@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import FotoProducto from '../../../assets/img/FotoProducto.jpg'
+
 
 export const Productos = ({productos}) => {
    
@@ -9,9 +9,9 @@ export const Productos = ({productos}) => {
     
         
         <CardProductos>
-            <img src={FotoProducto} alt='foto'></img>
+            <img src={productos.media.source} alt='foto'></img>
             <h3>{productos.name}</h3>
-            <div> <p>{productos.price}</p> <span>${productos.discount}</span></div>
+            <div> <p>{productos.price.formatted}</p><span></span></div>
             <BottonProducto>Ver mas</BottonProducto>
         </CardProductos>
      

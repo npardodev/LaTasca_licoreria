@@ -10,7 +10,7 @@ export const CustomSelectComponent = ({options, value, name, color, actionChange
 
     useEffect(() =>{
         setSelectValue((value ?? ''), value);
-    });       
+    },[value]);       
 
     const handleFocus = () => {
         if (actionFocus) {

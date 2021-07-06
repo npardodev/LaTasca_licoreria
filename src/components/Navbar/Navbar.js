@@ -1,21 +1,10 @@
 import React from 'react'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
 import { Link } from 'react-router-dom'
 import LogoHeader from '../../assets/img/IconosHome/LogoHeader.png'
 import IconInstagram from '../../assets/img/IconosHome/IconoInstagram.png'
 import IconFacebook from '../../assets/img/IconosHome/IconoFacebook.png'
-<<<<<<< HEAD
-
-
-=======
 import { categories }  from '../../data/categories.js';
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
 
 
 import 
@@ -47,12 +36,8 @@ const Navbar = () => {
             </DivContentLogo>
             <NavNavbar>
                 <UlLinksNavbar>
-                  
-<<<<<<< HEAD
-                    <LiLinksNavbar><Link to="/about">Vinos </Link> <ArrowDropDownIcon/>
-=======
-                    <LiLinksNavbar><Link to={`/products/${categories.WINES.id}`}>Vinos </Link> <ArrowDropDownIcon/>
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
+                    <LiLinksNavbar><Link to="/">Home</Link></LiLinksNavbar>
+                    <LiLinksNavbar><Link to={`/products/${categories.WINES.name}`}>Vinos </Link> <ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
@@ -61,36 +46,24 @@ const Navbar = () => {
                     </LiLinksNavbar>
                        
                    
-<<<<<<< HEAD
-                    <LiLinksNavbar><Link to="/about">Cervezas</Link><ArrowDropDownIcon/>
-=======
-                    <LiLinksNavbar><Link to={`/products/${categories.BEERS.id}`}>Cervezas</Link><ArrowDropDownIcon/>
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
+                    <LiLinksNavbar><Link to={`/products/${categories.BEERS.name}`}>Cervezas</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                         </DivSubMenu>
                     </LiLinksNavbar>
-<<<<<<< HEAD
-                    <LiLinksNavbar><Link to="/about">Whiskys</Link><ArrowDropDownIcon/>
-=======
-                    <LiLinksNavbar><Link to={`/products/${categories.WHISKY.id}`}>Whiskys</Link><ArrowDropDownIcon/>
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
+                    <LiLinksNavbar><Link to={`/products/${categories.WHISKY.name}`}>Whiskys</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                             <Link to="/about">Otros productos</Link>
                         </DivSubMenu>
                     </LiLinksNavbar>
-<<<<<<< HEAD
-                    <LiLinksNavbar><Link to="/about">Otros productos</Link><ArrowDropDownIcon/>
-=======
-                    <LiLinksNavbar><Link to={`/products/${categories.OTHERS.id}`}>Otros productos</Link><ArrowDropDownIcon/>
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
+                    <LiLinksNavbar><Link to={`/products/${categories.OTHERS.name}`}>Otros productos</Link><ArrowDropDownIcon/>
                         <DivSubMenu>
-                            <Link to="/about">Otros productos</Link>
-                            <Link to="/about">Otros productos</Link>
+                            <Link to="/about">Comestibles</Link>
+                            <Link to="/about">otras bebidas</Link>
                             <Link to="/about">Otros productos</Link>
                         </DivSubMenu>
                     </LiLinksNavbar>

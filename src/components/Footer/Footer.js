@@ -41,9 +41,9 @@ export const Footer = () => {
                             <PeopleIcon style={{ color: commonStyles.tercery.main }}/>
                             <h4 >Seguinos</h4>
                             <div>
-                                <InstagramIcon color={commonStyles.primary.main} />
-                                <FacebookIcon color={commonStyles.primary.main} />  
-                                <MailOutlinedIcon color={commonStyles.primary.main} /> 
+                                <InstagramIcon  />
+                                <FacebookIcon />  
+                                <MailOutlinedIcon  /> 
                             </div>                         
                             <h5>@licorerialatasca</h5>
                         </div>

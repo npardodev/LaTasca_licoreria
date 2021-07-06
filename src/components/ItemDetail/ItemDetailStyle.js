@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-
-export const ItemDetailStyle = theme => {
-
-    return ({
-        productItem: {
-
-            padding: '2em',
-=======
 export const ItemDetailStyle = theme => {
 
     return ({
@@ -18,44 +7,18 @@ export const ItemDetailStyle = theme => {
 
         },
         productItem: {
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',
             gridGap: '1em',
             backgroundColor: '#FFFFF',
-<<<<<<< HEAD
-            margin: '1rem',
-            padding: '3rem',
-=======
             margin: '2em',
             padding: '3em',
 
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
 
             ' & hover': {
                 width: '100%',
                 height: 'auto',
             },
-<<<<<<< HEAD
-            ' & productDetails': {
-                display: 'flex',
-                flexDirection: 'column',
-            }
-        },
-
-        img: {
-            width: '100%',
-            maxHeight: '50%',
-        },
-
-        productDetails: {
-            '& h3': {
-                textAlign: 'start',
-                padding: '1rem',
-                fontSize: '1.5rem',
-                fontWeight: '600',
-                color: '#464EB8',
-=======
 
             ' & img': {
                 width: 'clamp(10em, 14em, 16em)',
@@ -81,24 +44,11 @@ export const ItemDetailStyle = theme => {
                 fontSize: '2.2em',
                 paddingBottom: '1em',
 
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
             },
 
             '& h4': {
                 textAlign: 'start',
                 paddingLeft: '1rem',
-<<<<<<< HEAD
-                paddingTop: '0.5rem',
-                fontSize: '1.2rem',
-                fontWeight: '100',
-            },
-
-            '& p': {
-                textAlign: 'start',
-                textAlign: 'justify',
-                textjustify: 'inter-word',
-                padding: '1rem',
-=======
                 padding: '0.5em',
                 fontWeight: '100',
             },
@@ -111,49 +61,10 @@ export const ItemDetailStyle = theme => {
                 textAlign: 'start',
                 textjustify: 'inter-word',
                 padding: '1em',
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
                 marginRight: '20%',
                 fontSize: '1rem',
                 fontWeight: '100',
                 color: '#706f6f',
-<<<<<<< HEAD
-            },
-
-
-            ' & button': {
-                width: '25%',
-                fontSize: '1rem',
-                color: '#ffff',
-                alignItems: 'center',
-                textAlign: 'center',
-                margin: '2 rem',
-                border: '#a89283',
-                padding: '0.3 rem',
-                marginLeft: '1rem',
-                paddingTop: '0.5rem',
-            },
-
-            '& div': {
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                width: '40%',
-                paddingBottom: '0.8rem',
-
-
-
-            }
-
-        },
-
-        actualPrice: {
-            fontSize: '1rem'
-        },
-
-        offerPrice: {
-            fontSize: '12rem',
-            textDecoration: 'line-through',
-=======
                 bottom: '10%',
             },
 
@@ -171,7 +82,6 @@ export const ItemDetailStyle = theme => {
             fontSize: '0.9em',
             padding: '1em',
 
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
         },
 
         CustomSelectComponent: {
@@ -181,9 +91,6 @@ export const ItemDetailStyle = theme => {
             marginLeft: ' 1rem',
             fontSize: '0.7rem',
             border: 'none',
-<<<<<<< HEAD
-        }
-=======
         },
 
         optionDetails: {
@@ -197,7 +104,6 @@ export const ItemDetailStyle = theme => {
 
         },
 
->>>>>>> 311f8389b5d8d56f86be9c84c710e73d0bf53a75
 
 
     })

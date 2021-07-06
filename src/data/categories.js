@@ -1,6 +1,7 @@
 export const categories = {
+
     WINES: {
-        name: 'VINOS',
+        name: 'Vinos',
         id: '1'
     },
     BEERS: {

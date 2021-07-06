@@ -6,7 +6,7 @@ import {Productos} from './Productos'
 
 
 export const ProductosCarrusel = ({productos}) => {
- 
+    
     return (
         <DivContainerProducts>
             <DivProductsContent>

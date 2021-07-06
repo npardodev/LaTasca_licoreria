@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomeWiew from '../layout/HomeWiew'
-import { ItemListContainer } from './../components/ItemListContainer/ItemListContainer.js';
-import { ItemDetailContainer } from './../components/ItemDetailContainer/ItemDetailContainer.js';
+import { ItemListContainer } from '../layout/ItemListContainer/ItemListContainer';
+import { ItemDetailContainer } from '../layout/ItemDetailContainer/ItemDetailContainer';
 import {  CustomNotFound } from './../components/CustomComponents/CustomNotFound.js'
 
 export const appPaths = {
