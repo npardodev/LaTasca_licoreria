@@ -12,6 +12,7 @@ import bannerImgCandy from '../assets/img/banners/BannerDulce.png'
 import bannerImgBeer from '../assets/img/banners/BannerCerveza.png'
 import { categories } from '../data/categories.js'
 
+
 const banners = [{
         category: categories.WINES.name,
         img: bannerImgWines,
