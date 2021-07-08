@@ -3,70 +3,91 @@ import { commonStyles } from './../../styles/commonStyles.js';
 export const ContactStyle = theme => {
 
     return ({
+        section: {
+            witdh: '100%',
+            heigth: '100vh',
+        },
+        contactContainer: {
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridGap: '1em',
+            backgroundColor: '#FFFFF',
+            margin: '2em',
+            padding: '3em',
 
+        },
+        map: {
+            textAling: 'center',
+            alignItems: 'center',
+            display: 'block',
+            margin: '0',
 
-
-
-
-
-
-        //VIEJOOO --- BORRAR
-        footer: {
-            padding: '1rem',
-            backgroundColor: commonStyles.primary.main,
-            width: '100%',
-            fontfamily: commonStyles.fonts.primary,
-
-            '& h1': {
-                fontWeight: '600',
-                fontSize: '2rem',
-                color: commonStyles.secondary.main,
-            },
+            '& img': {
+                display: 'block',
+                margin: 'auto',
+                textAling: 'center',
+                alignItems: 'center',
+            }
+        },
+        follow: {
+            backgroundColor: '#202020',
+            borderRadius: '20px',
+            color: 'white',
+            textAlign: 'center',
+            alignItems: 'center',
+            padding: '1em',
 
             '& h2': {
-                fontWeight: '300',
-                fontSize: '1.5rem',
-                color: commonStyles.secondary.main,
+                padding: '1em',
+                fontWidth: '1.9em',
+                fontWeight: '100',
             },
-
-            '& h4': {
-                fontWeight: '600',
-                fontSize: '1.3em',
-                padding: '0.5em',
-                color: 'white',
-            },
-            '& h5': {
-                fontWeight: '300',
-                fontSize: '0.9em',
-                color: 'white',
-                padding: '0.4em',
-
-            }
-
         },
-        footerColumns: {
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            textAlign: "center",
-        },
-
         icons: {
-            fontSize: '1rem',
+            padding: '1em',
             color: 'white',
+            display: 'flex',
+            flexWrap: 'no-wrap',
+            textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '3em',
+        },
+        info: {
+            padding: '1em',
+            color: 'white',
+            display: 'flex',
+            flexWrap: 'no-wrap',
+            textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            gap: '2em',
+
+            '& div': {
+                textAlign: 'center',
+                alignItems: 'center',
+            },
+
+            '& h4, h5': {
+                padding: '0.5em',
+                fontWidth: '1.8em',
+                fontWeight: '100',
+            },
+
+            '& .MuiSvgIcon-root': {
+                color: 'white',
+            },
         },
 
-        footerLogo: {
-            '& img': {
-                width: 'clamp(3em, 5em, 6em)',
-                height: ' clamp(3em, 5em, 6em)',
+        '@media (max-width: 992px)': {
 
-            }
-        },
-        footerIcons: {
-            alignItems: "center",
-            textAlign: "center",
+            contactContainer: {
+                gridTemplateColumns: 'repeat(1, 1fr)',
+                '& img': {
+
+                }
+            },
+
         }
-
     })
 };

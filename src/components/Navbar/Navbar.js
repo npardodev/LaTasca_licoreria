@@ -68,7 +68,7 @@ const Navbar = () => {
                         </DivSubMenu>
                     </LiLinksNavbar>
                     <LiLinksNavbar><Link to="/about">Nosotros</Link></LiLinksNavbar>
-                    <LiLinksNavbar><Link to="/about">Contacto</Link></LiLinksNavbar>
+                    <LiLinksNavbar><Link to="/contact">Contacto</Link></LiLinksNavbar>
                     <LiLinksNavbar><img src={IconInstagram} style={{height:'35px'}} alt="instagram"/></LiLinksNavbar>
                     <LiLinksNavbar><img src={IconFacebook}  style={{height:'35px'}} alt="facebook"/></LiLinksNavbar>
                 </UlLinksNavbar>

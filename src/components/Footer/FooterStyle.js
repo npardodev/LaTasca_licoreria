@@ -8,20 +8,20 @@ export const FooterStyle = theme => {
         footer: {
             margin: '0',
             padding: '1rem',
-            backgroundColor: commonStyles.primary.main,
+            backgroundColor: commonStyles.secondary.main,
             width: '100%',
             fontfamily: commonStyles.fonts.primary,
 
             '& h1': {
                 fontWeight: '600',
                 fontSize: '2rem',
-                color: commonStyles.secondary.main,
+                color: 'white',
             },
 
             '& h2': {
                 fontWeight: '300',
                 fontSize: '1.5rem',
-                color: commonStyles.secondary.main,
+                color: 'white',
             },
 
             '& h4': {
@@ -63,8 +63,15 @@ export const FooterStyle = theme => {
             textAlign: "center",
 
             '& img': {
-                width: 'clamp(28em, 29em, 31em)',
-                height: ' clamp(2em, 2.5em, 3em)',
+                width: 'clamp(29em, 31em, 32em)',
+                height: ' clamp(2em, 2.2em, 2.5em)',
+            }
+
+        },
+
+        socialIcons: {
+            '& .MuiSvgIcon-root': {
+                margin: '0.5em',
             }
 
         }

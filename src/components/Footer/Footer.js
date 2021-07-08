@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -9,9 +8,8 @@ import { commonStyles } from './../../styles/commonStyles.js';
 import PhoneIcon from '@material-ui/icons/Phone';
 import ScheduleIcon from '@material-ui/icons/Schedule';
 import PeopleIcon from '@material-ui/icons/People';
-import logoFooter from '../../assets/img/logo.svg'
+import logoFooter from '../../assets/img/IconosFooter/logoFooter.png'
 import imgPayments from '../../assets/img/pagos/payments.png'
-
 
 const useStyles = makeStyles((theme) => FooterStyle(theme));
 
@@ -22,7 +20,7 @@ export const Footer = () => {
     return (<>
                 <div>
                     <div className={classes.footerPayment}>
-                        <img src={imgPayments} ></img>
+                        <img src={imgPayments} alt="Métodos de pago"></img>
                     </div>
                     <footer className={classes.footer}>
                         <div className={classes.footerColumns} >
@@ -42,10 +40,10 @@ export const Footer = () => {
                             <div>
                                 <PeopleIcon style={{ color: commonStyles.tercery.main }}/>
                                 <h4 >Seguinos</h4>
-                                <div>
-                                    <InstagramIcon  />
-                                    <FacebookIcon />  
-                                    <MailOutlinedIcon  /> 
+                                <div className={classes.socialIcons} >
+                                    <InstagramIcon style={{ color: commonStyles.tercery.main }} />
+                                    <FacebookIcon style={{ color: commonStyles.tercery.main }} />  
+                                    <MailOutlinedIcon style={{ color: commonStyles.tercery.main }}  /> 
                                 </div>                         
                                 <h5>@licorerialatasca</h5>
                             </div>

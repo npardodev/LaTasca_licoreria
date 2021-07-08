@@ -6,6 +6,7 @@ import { ItemDetailContainer } from '../layout/ItemDetailContainer/ItemDetailCon
 import { CustomNotFound } from './../components/CustomComponents/CustomNotFound.js'
 import {ProductsBanner} from '../layout/ProductsBanner'
 import {AboutUsWiew} from '../layout/AboutUsWiew.js'
+import {ContactView} from '../layout/ContactView.js'
 
 export const appPaths = {
     
@@ -16,6 +17,7 @@ export const appPaths = {
       SPIRITS_PRODUCTS_PATH: '/spirits',
       ITEM_DETAIL_PATH: '/products/:idCat/:idItem',
       ABOUT_US_PATH: '/about',
+      CONTACT_PATH: '/contact',
       ITEM_PATH: '/item',
       ITEMS_CATEGORYS_PATH: '/products/:idCat',
   }
@@ -43,12 +45,15 @@ export const RouterApp= () => {
         <Route exact path={appPaths.ABOUT_US_PATH}>
             <AboutUsWiew/>
         </Route>
-
+        
         <Route exact path={appPaths.ALL_PRODUCTS_PATH}>
             <ItemListContainer/>
         </Route>
 
-
+        <Route exact path={appPaths.CONTACT_PATH}>
+            <ContactView/>
+        </Route>
+        
         <Route exact path={'/test'}>
         </Route>
 
