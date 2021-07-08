@@ -11,10 +11,6 @@ const HomeWiew = () => {
     const productos = useSelector(store => store.productsApi.array)
     console.log(productos)
 
-    
-   
-   
-
 
 
     return (

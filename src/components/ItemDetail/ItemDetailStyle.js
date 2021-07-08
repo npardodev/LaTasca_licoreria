@@ -21,8 +21,8 @@ export const ItemDetailStyle = theme => {
             },
 
             ' & img': {
-                width: 'clamp(10em, 14em, 16em)',
-                height: ' clamp(16em, 22em, 23em)',
+                maxWidth: '511px',
+                maxHeight: '679px',
 
                 display: 'block',
                 margin: 'auto',

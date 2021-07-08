@@ -11,17 +11,12 @@ export const ItemListContainer = () => {
 
     const {idCat } = useParams();
     const initialErrorState = '';
-    
     const [error,setError] = useState(initialErrorState);
+    let filterData =0;
 
-    
-   
-    const filterData = productos.filter(item => item.categories[0].name === idCat);
-    
-    
-
-    
-      
+    if (productos!== null && productos!== undefined){
+        filterData = productos.filter(item => item.categories[0].name === idCat);
+    }
 
     return <>
             {error!==initialErrorState ? 

@@ -1,12 +1,17 @@
 import { commonStyles } from './../../styles/commonStyles.js';
 
-export const FooterStyle = theme => {
+export const ContactStyle = theme => {
 
     return ({
 
 
+
+
+
+
+
+        //VIEJOOO --- BORRAR
         footer: {
-            margin: '0',
             padding: '1rem',
             backgroundColor: commonStyles.primary.main,
             width: '100%',
@@ -58,15 +63,9 @@ export const FooterStyle = theme => {
 
             }
         },
-        footerPayment: {
+        footerIcons: {
             alignItems: "center",
             textAlign: "center",
-
-            '& img': {
-                width: 'clamp(28em, 29em, 31em)',
-                height: ' clamp(2em, 2.5em, 3em)',
-            }
-
         }
 
     })

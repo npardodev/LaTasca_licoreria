@@ -3,17 +3,19 @@ import { Switch, Route } from 'react-router-dom';
 import HomeWiew from '../layout/HomeWiew'
 import { ItemListContainer } from '../layout/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from '../layout/ItemDetailContainer/ItemDetailContainer';
-import {  CustomNotFound } from './../components/CustomComponents/CustomNotFound.js'
+import { CustomNotFound } from './../components/CustomComponents/CustomNotFound.js'
+import {ProductsBanner} from '../layout/ProductsBanner'
+import {AboutUsWiew} from '../layout/AboutUsWiew.js'
 
 export const appPaths = {
     
       ALL_PRODUCTS_PATH: '/products',
       OTHER_PRODUCTS_PATH: '/others',
-      WINES_PRODUCTS_PATH: '/wines',
+      WINES_PRODUCTS_PATH: '/products/Vinos',
       BEERS_PRODUCTS_PATH: '/beers',
       SPIRITS_PRODUCTS_PATH: '/spirits',
       ITEM_DETAIL_PATH: '/products/:idCat/:idItem',
-      ABOUT_US_PATH: '/aboutus',
+      ABOUT_US_PATH: '/about',
       ITEM_PATH: '/item',
       ITEMS_CATEGORYS_PATH: '/products/:idCat',
   }
@@ -25,11 +27,8 @@ export const RouterApp= () => {
             <HomeWiew/>
         </Route>
 
-        <Route exact path={appPaths.ALL_PRODUCTS_PATH}>
-            <ItemListContainer/>
-        </Route>
-
         <Route exact path={appPaths.ITEMS_CATEGORYS_PATH}>
+            <ProductsBanner/>
             <ItemListContainer/>
         </Route>
 
@@ -40,21 +39,17 @@ export const RouterApp= () => {
         <Route exact path={appPaths.OTHER_PRODUCTS_PATH}>
             <ItemListContainer/>
         </Route>
-
-        <Route exact path={appPaths.WINES_PRODUCTS_PATH}>
-            <ItemListContainer/>
-        </Route>
-
-        <Route exact path={appPaths.BEERS_PRODUCTS_PATH}>
-            <ItemListContainer/>
-        </Route>
-
-        <Route exact path={appPaths.SPIRITS_PRODUCTS_PATH}>
-            <ItemListContainer/>
+        
+        <Route exact path={appPaths.ABOUT_US_PATH}>
+            <AboutUsWiew/>
         </Route>
 
         <Route exact path={appPaths.ALL_PRODUCTS_PATH}>
             <ItemListContainer/>
+        </Route>
+
+
+        <Route exact path={'/test'}>
         </Route>
 
         <Route component={CustomNotFound}/>

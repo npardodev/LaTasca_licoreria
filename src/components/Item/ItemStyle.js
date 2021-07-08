@@ -19,8 +19,9 @@ export const ItemStyle = theme => {
             justifyContent: 'space-between',
             bottom: '0',
             ' & img': {
-                width: 'clamp(5em, 5.5em, 7em)',
-                height: ' clamp(7em, 9em, 10em)',
+                paddingTop: '1em',
+                width: 'clamp(5em, 9em, 9em)',
+                height: ' clamp(5em, 8em, 9em)',
                 cursor: 'pointer',
             },
             ' & h4': {
@@ -28,12 +29,7 @@ export const ItemStyle = theme => {
                 fontWeight: '500',
             },
 
-            ' & h3': {
-                paddingTop: '0.5rem',
-                fontSize: '1.1em',
-                margin: '0',
-                fontWeight: '600',
-            },
+
 
             ' & h5': {
                 fontWeight: '300',
@@ -65,6 +61,13 @@ export const ItemStyle = theme => {
                 gap: '1rem',
                 padding: '1em',
 
+            },
+            ' & h3': {
+                paddingTop: '0.5rem',
+                fontSize: '1.1em',
+                color: 'black',
+                margin: '0',
+                fontWeight: '600',
             },
         },
         Button: {

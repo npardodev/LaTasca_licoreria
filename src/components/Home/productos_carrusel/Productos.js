@@ -4,20 +4,13 @@ import styled from 'styled-components'
 
 export const Productos = ({productos}) => {
    
-    return (
-
-    
-        
+    return (        
         <CardProductos>
             <img src={productos.media.source} alt='foto'></img>
             <h3>{productos.name}</h3>
             <div> <p>{productos.price.formatted}</p><span></span></div>
             <BottonProducto>Ver mas</BottonProducto>
         </CardProductos>
-     
-       
-       
-       
     )
 }
 

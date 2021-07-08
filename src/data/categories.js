@@ -12,12 +12,32 @@ export const categories = {
         name: 'Whiskys',
         id: '3'
     },
-    LICORES: {
+    LICORS: {
         name: 'Licores',
         id: '4'
     },
+    TEQUILA: {
+        name: 'Tequila',
+        id: '5'
+    },
+    VODKA: {
+        name: 'Vodka',
+        id: '6'
+    },
+    SALTY: {
+        name: 'Salados',
+        id: '7'
+    },
+    RON: {
+        name: 'Ron',
+        id: '8'
+    },
+    CANDY: {
+        name: 'Dulces',
+        id: '9'
+    },
     OTHERS: {
         name: 'Otros',
-        id: '5'
+        id: '9'
     }
 };
