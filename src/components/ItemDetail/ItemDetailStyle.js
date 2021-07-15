@@ -23,7 +23,6 @@ export const ItemDetailStyle = theme => {
             ' & img': {
                 maxWidth: '511px',
                 maxHeight: '679px',
-
                 display: 'block',
                 margin: 'auto',
             },
@@ -43,7 +42,6 @@ export const ItemDetailStyle = theme => {
                 color: 'black',
                 fontSize: '2.2em',
                 paddingBottom: '1em',
-
             },
 
             '& h4': {
@@ -67,7 +65,6 @@ export const ItemDetailStyle = theme => {
                 color: '#706f6f',
                 bottom: '10%',
             },
-
 
         },
 

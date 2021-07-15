@@ -7,19 +7,22 @@ import Navbar from './components/Navbar/Navbar.js';
 import generateStore from './reducer/store'
 import { useDispatch } from 'react-redux'
 import { ConsultaApi } from './reducer/actions/products'
+
+
 const App = () => {
+
   const dispatch = useDispatch()
   useEffect(() => {
     
     dispatch(ConsultaApi())
-
+    
   }, [dispatch])
 
   return (
     <>
       <BrowserRouter>
             <Navbar/>
-            <RouterApp/>
+              <RouterApp/>
             <Footer/>
       </BrowserRouter>
     </>

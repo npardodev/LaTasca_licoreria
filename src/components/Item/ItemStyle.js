@@ -29,8 +29,6 @@ export const ItemStyle = theme => {
                 fontWeight: '500',
             },
 
-
-
             ' & h5': {
                 fontWeight: '300',
                 padding: '0.5rem',
