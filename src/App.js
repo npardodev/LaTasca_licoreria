@@ -6,21 +6,22 @@ import {Footer} from './components/Footer/Footer.js';
 import Navbar from './components/Navbar/Navbar.js';
 import { useDispatch } from 'react-redux'
 import { ConsultaApi } from './reducer/actions/products'
-import { WsapComponent } from './components/WshsapComponent/WsapComponent.js';
+
+
 const App = () => {
+
   const dispatch = useDispatch()
   useEffect(() => {
     
     dispatch(ConsultaApi())
-
+    
   }, [dispatch])
 
   return (
     <>
       <BrowserRouter>
             <Navbar/>
-            <RouterApp/>
-            <WsapComponent/>
+              <RouterApp/>
             <Footer/>
       </BrowserRouter>
     </>

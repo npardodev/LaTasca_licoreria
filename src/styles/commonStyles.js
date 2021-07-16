@@ -19,4 +19,5 @@ export const commonStyles = {
     tercery: {
         main: '#F7F5F0' //cremita claro
     }
+
 };
