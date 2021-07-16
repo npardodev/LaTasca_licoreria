@@ -40,12 +40,16 @@ export const categories = {
         name: 'Otros',
         id: '9'
     },
-    MALBEC:{
+    MALBEC: {
         name: 'Malbec',
         id: '10'
     },
-    CABERNET:{
+    CABERNET: {
         name: 'Cabernet',
         id: '11'
+    },
+    TANNAT: {
+        name: 'Tannat',
+        id: '12'
     },
 };

@@ -4,7 +4,6 @@ export const ItemDetailStyle = theme => {
         section: {
             witdh: '100%',
             heigth: '100vh',
-
         },
         productItem: {
             display: 'grid',
@@ -40,14 +39,14 @@ export const ItemDetailStyle = theme => {
                 padding: '0.4rem',
                 fontWeight: '600',
                 color: 'black',
-                fontSize: '2.2em',
+                fontSize: '2em',
                 paddingBottom: '1em',
             },
 
             '& h4': {
                 textAlign: 'start',
-                paddingLeft: '1rem',
-                padding: '0.5em',
+                marginRight: '20%',
+                padding: '0.25em',
                 fontWeight: '100',
             },
 
@@ -58,19 +57,19 @@ export const ItemDetailStyle = theme => {
             '& p': {
                 textAlign: 'start',
                 textjustify: 'inter-word',
-                padding: '1em',
+                padding: '0.5em',
                 marginRight: '20%',
                 fontSize: '1rem',
                 fontWeight: '100',
                 color: '#706f6f',
                 bottom: '10%',
             },
-
         },
+
 
         actualPrice: {
             textDecoration: 'none',
-            fontSize: '1.2em',
+            fontSize: '1.5em',
 
         },
 
@@ -99,6 +98,15 @@ export const ItemDetailStyle = theme => {
             gap: '2rem',
             padding: '1em',
 
+        },
+        sign: {
+            '& p': {
+                textAlign: 'end',
+                paddingBottom: '3rem',
+                fontWeight: '100',
+                color: 'black',
+                fontSize: '0.8em',
+            },
         },
 
 

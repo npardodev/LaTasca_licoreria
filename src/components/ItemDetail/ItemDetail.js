@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { ItemDetailStyle } from './ItemDetailStyle.js'
 import { makeStyles, CircularProgress} from '@material-ui/core';
 import { CustomSelectComponent } from './../CustomComponents/CustomSelectComponent.js'
@@ -11,6 +11,16 @@ export const ItemDetail = ({item}) => {
     const objetItem =item[0]
     const classes = useStyles();
 
+    const getDescription = (objetItem) => {
+        let descrip = objetItem.description;
+        return descrip;
+    }
+
+    useEffect(() => {
+    
+    },[])
+
+    
     return (item.length === 0 ? (<CircularProgress color="primary" />) : (
         <section>
             <div className= {classes.productItem}>
@@ -18,15 +28,12 @@ export const ItemDetail = ({item}) => {
                     <img src={objetItem.media.source} alt='foto'/>
                 </div>
                 <div className= {classes.productDetails}>
-                    <h3>{item.name}</h3>
+                    <h3>{objetItem.name}</h3>
                     <h4 className= {classes.actualPrice}>${objetItem.price.formatted}</h4>
-                    <h4 className= {classes.offerPrice}>$20</h4>
-                    <p>description</p>
-                    <div className= {classes.optionDetails}>
-                        <h6>Categoria</h6>
-                        <CustomSelectComponent options ={categories} /> 
+                    <div dangerouslySetInnerHTML={{__html: objetItem.description}} />
+                    <div className= {classes.sign}>
+                        <p>La Tasca 2021</p>
                     </div>
-                    <p className= {classes.sign}>La Tasca 2021</p>
                 </div>
             </div>
     </section>))

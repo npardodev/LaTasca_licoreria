@@ -1,16 +1,13 @@
 import React from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import HomeWiew from '../layout/HomeWiew'
+import {AboutUsWiew} from '../layout/AboutUsWiew.js'
 import { ItemListContainer } from '../layout/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from '../layout/ItemDetailContainer/ItemDetailContainer';
 import {ContactView} from '../layout/ContactView.js'
 import {ProductsByCategoryView} from '../layout/ProductsByCategoryView.js'
-
 import './../utility/index.css';
-import {
-    TransitionGroup,
-    CSSTransition
-  } from 'react-transition-group'
+import { TransitionGroup,CSSTransition} from 'react-transition-group'
   
 
 export const appPaths = {
@@ -27,13 +24,10 @@ export const appPaths = {
       ITEMS_CATEGORYS_PATH: '/products/:idCat',
 }
 
-
-
-
 const routes = [
     { path: appPaths.HOME_PATH, name: 'Home', Component: HomeWiew },
     { path: appPaths.ALL_PRODUCTS_PATH, name: 'Products', Component: ItemListContainer },
-    { path: appPaths.ABOUT_US_PATH, name: 'about', Component: HomeWiew },
+    { path: appPaths.ABOUT_US_PATH, name: 'about', Component: AboutUsWiew },
     { path: appPaths.CONTACT_PATH, name: 'Contact', Component: ContactView },
     { path: appPaths.ITEMS_CATEGORYS_PATH, name: 'Items Category', Component: ProductsByCategoryView },
     { path: appPaths.ITEM_DETAIL_PATH, name: 'Items Detail', Component: ItemDetailContainer },
