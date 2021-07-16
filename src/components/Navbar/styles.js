@@ -65,13 +65,14 @@ export const DivSubMenu = styled.div`
     position: absolute;
     display: none;
     width:max-content;
-    bottom:-110px;
+    bottom:-100px;
    
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-end;
     align-items: center;
     padding: 10px 30px;
     z-index: 100;
+    height: 120px;
     background-color:#ffffff;
     a{
         width: max-content;
@@ -86,11 +87,13 @@ export const LiLinksNavbar = styled.li`
     align-items:center;
     position: relative;
     cursor: pointer;
+    z-index: 200;
     &:hover ${DivSubMenu} {
         display: flex;
     }
    
     a{
+        z-index: 200;
         text-decoration: none;
         color: #232323;
     }

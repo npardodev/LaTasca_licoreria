@@ -68,7 +68,7 @@ export const ProductsBanner = () => {
 
     return (
         items.map((item, i) => {
-            return <CustomBanner img = { item.img }
+            return <CustomBanner key={i} img = { item.img }
             alt = { item.alt }
             />
         })

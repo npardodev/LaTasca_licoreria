@@ -39,5 +39,13 @@ export const categories = {
     OTHERS: {
         name: 'Otros',
         id: '9'
-    }
+    },
+    MALBEC:{
+        name: 'Malbec',
+        id: '10'
+    },
+    CABERNET:{
+        name: 'Cabernet',
+        id: '11'
+    },
 };

@@ -6,7 +6,7 @@ export const ItemStyle = theme => {
         card: {
             background: '#ffff',
             width: '280px',
-            height: '330px',
+            height: '360px',
             borderRadius: '25px',
             transition: '0.5s',
             boxShadow: 'rgb(70 79 184 / 80%) 0px 10px 36px -25px',
@@ -20,9 +20,10 @@ export const ItemStyle = theme => {
             bottom: '0',
             ' & img': {
                 paddingTop: '1em',
-                width: 'clamp(5em, 9em, 9em)',
-                height: ' clamp(5em, 8em, 9em)',
+                height: '100%',
                 cursor: 'pointer',
+               
+                objectFit: 'cover',
             },
             ' & h4': {
                 fontSize: '0.9em',
@@ -47,6 +48,7 @@ export const ItemStyle = theme => {
         cardImg: {
             width: '70%',
             height: '40%',
+
         },
         cardInfo: {
             width: '100%',

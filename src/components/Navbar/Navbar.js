@@ -39,9 +39,9 @@ const Navbar = () => {
                     <LiLinksNavbar><Link to="/">Home</Link></LiLinksNavbar>
                     <LiLinksNavbar><Link to={`/products/${categories.WINES.name}`}>Vinos </Link> <ArrowDropDownIcon/>
                         <DivSubMenu>
-                            <Link to="/about">Otros productos</Link>
-                            <Link to="/about">Otros productos</Link>
-                            <Link to="/about">Otros productos</Link>
+                            <Link to={`/products/${categories.MALBEC.name}`} >Malbec</Link>
+                            <Link to={`/products/${categories.CABERNET.name}`} >Cabernet</Link>
+                            
                         </DivSubMenu>
                     </LiLinksNavbar>
                        
