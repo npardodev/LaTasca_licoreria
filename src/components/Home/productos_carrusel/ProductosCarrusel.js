@@ -5,7 +5,7 @@ import { DivContainerProducts , DivProductsContent ,DivProducts } from './styles
 import {Productos} from './Productos'
 
 
-export const ProductosCarrusel = ({productos}) => {
+export const ProductosCarrusel = ({productos_Destacados , productos_Nuevos}) => {
     
     return (
         <DivContainerProducts>
@@ -25,7 +25,7 @@ export const ProductosCarrusel = ({productos}) => {
                         }}
                   
                    >
-                        {productos.map(e =>{
+                        {productos_Nuevos.map(e =>{
                             return (
                                <SplideSlide key={e.id}>
                                     <Productos productos={e}/>
@@ -60,7 +60,7 @@ export const ProductosCarrusel = ({productos}) => {
                         }}
                         
                    >
-                        {productos.map(e =>{
+                        {productos_Destacados.map(e =>{
                             return (
                                <SplideSlide key={e.id}>
                                     <Productos productos={e}/>

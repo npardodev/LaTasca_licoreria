@@ -44,43 +44,24 @@ export const H2TituloLogo = styled.h2`
 export const NavNavbar = styled.nav`
     width:90%;
     margin-top: 30px;
-
-    
-
-`;
-
-
-
-export const UlLinksNavbar = styled.ul`
-    display: flex;
-    justify-content: space-around;
-   
-`;
-
-
-
-;
-
-export const DivSubMenu = styled.div`
-    position: absolute;
-    display: none;
-    width:max-content;
-    bottom:-100px;
-   
-    flex-direction:column;
-    justify-content:flex-end;
-    align-items: center;
-    padding: 10px 30px;
-    z-index: 100;
-    height: 120px;
-    background-color:#ffffff;
-    a{
-        width: max-content;
-        margin: 5px 0px;
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        flex: auto;
+        flex-direction: row-reverse;
     }
     
-  
+
 `;
+
+
+
+
+
+
+
+
+
 
 export const LiLinksNavbar = styled.li`
     display: flex;
@@ -88,14 +69,48 @@ export const LiLinksNavbar = styled.li`
     position: relative;
     cursor: pointer;
     z-index: 200;
-    &:hover ${DivSubMenu} {
-        display: flex;
+    border-bottom: solid 3px #fff;
+    :before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0px;
+        height: 3px;
+        background-color: #0074D9;
+        transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+       
     }
+    :hover:before{
+        
+        left: 0;
+        right: auto;
+        width: 100%;
+        
+    }
+    
+    
    
     a{
         z-index: 200;
         text-decoration: none;
         color: #232323;
+        
+    }
+    img{
+        height:35px;
+    }
+    @media (max-width: 768px) {
+       
+       a{
+           width: 100%;
+            padding: 20px 20px;
+            margin-left: 20px;
+       }
+       img{
+            margin-left: 40px;
+            height:50px;
+       }
     }
 `
 
