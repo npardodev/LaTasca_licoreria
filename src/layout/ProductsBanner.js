@@ -10,6 +10,7 @@ import bannerImgRon from '../assets/img/banners/BannerRon.png'
 import bannerImgLicor from '../assets/img/banners/BannerLicor.png'
 import bannerImgCandy from '../assets/img/banners/BannerDulce.png'
 import bannerImgBeer from '../assets/img/banners/BannerCerveza.png'
+import bannerImgAperitives from '../assets/img/banners/bannerAperitives.png'
 import { categories } from '../data/categories.js'
 
 
@@ -18,6 +19,18 @@ const banners = [{
         img: bannerImgWines,
         alt: "Imagen banner vinos"
     },
+    {
+        category: "VinosUruguayos",
+        img: bannerImgWines,
+        alt: "Imagen banner vinos"
+    },
+
+    {
+        category: "VinosExtranjeros",
+        img: bannerImgWines,
+        alt: "Imagen banner vinos"
+    },
+
     {
         category: categories.TEQUILA.name,
         img: bannerImgTequila,
@@ -58,6 +71,30 @@ const banners = [{
         img: bannerImgBeer,
         alt: "Imagen banner Cervezas"
     },
+
+    {
+        category: "CervezasArtesanales",
+        img: bannerImgBeer,
+        alt: "Imagen banner Cervezas Artesanales"
+    },
+
+    {
+        category: "CervezasImportadas",
+        img: bannerImgBeer,
+        alt: "Imagen banner Cervezas Importadas"
+    },
+
+    {
+        category: "CervezasNacionales",
+        img: bannerImgBeer,
+        alt: "Imagen banner Cervezas Nacionales"
+    },
+
+    {
+        category: categories.APERITIVES.name,
+        img: bannerImgAperitives,
+        alt: "Imagen banner Aperitivos"
+    },
 ]
 
 
@@ -68,7 +105,8 @@ export const ProductsBanner = () => {
 
     return (
         items.map((item, i) => {
-            return <CustomBanner key={i} img = { item.img }
+            return <CustomBanner key = { i }
+            img = { item.img }
             alt = { item.alt }
             />
         })

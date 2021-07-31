@@ -9,14 +9,9 @@ import { Marcas } from '../components/Home/nuestras_marcas/Marcas'
 const HomeWiew = () => {
     
     const productos = useSelector(store => store.productsApi.array)
-<<<<<<< HEAD
-=======
-   
     let Vinos2Categorias = []
     let VinosDestacados = []
     let VinosNuevos = []
-
-    console.log(productos)
 
     if (productos!== null && productos!== undefined){
     
@@ -24,12 +19,9 @@ const HomeWiew = () => {
 
             if(item.categories.length === 2){
                 Vinos2Categorias.push(item)
-            }
-
-            
+            }  
         });
-        
-
+    
     }
     if (Vinos2Categorias !== null && Vinos2Categorias !== undefined){
     
@@ -39,24 +31,9 @@ const HomeWiew = () => {
                VinosDestacados.push(item)
            }else if(item.categories[1].name === 'Productos Nuevos'){
                 VinosNuevos.push(item)
-
            }
-
-            
         });
-        
-
     }
-
-    console.log(VinosDestacados)
-    console.log(VinosNuevos)
-   
-
-
-
-   
-
->>>>>>> 54f040c682fce68c7731093904f34b7bf6b65b9b
 
     return (
         <HomeContainer>

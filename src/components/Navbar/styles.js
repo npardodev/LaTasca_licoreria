@@ -1,10 +1,25 @@
 import styled from 'styled-components'
 
 
+export const DivSubMenu = styled.div `
+    position: absolute;
+    display: none;
+    width:max-content;
+    bottom:-70px;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:#ffffff;
+    a{
+        width: max-content;
+        margin: 5px 0px;
+    }
+`;
 
-
-
-export const Header = styled.header`
+export const Header = styled.header `
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -14,7 +29,7 @@ export const Header = styled.header`
     
 `;
 
-export const DivContentLogo = styled.div`
+export const DivContentLogo = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +38,14 @@ export const DivContentLogo = styled.div`
 
 `;
 
-export const DivLogo = styled.div`
+export const DivLogo = styled.div `
     height: 100%;
     img{
         height: 120px;
     }
 `;
 
-export const H2TituloLogo = styled.h2`
+export const H2TituloLogo = styled.h2 `
     font-size: 2.2em;
     display: flex;
     flex-direction: column;
@@ -41,7 +56,7 @@ export const H2TituloLogo = styled.h2`
     }
 `;
 
-export const NavNavbar = styled.nav`
+export const NavNavbar = styled.nav `
     width:90%;
     margin-top: 30px;
     @media (max-width: 768px) {
@@ -63,7 +78,7 @@ export const NavNavbar = styled.nav`
 
 
 
-export const LiLinksNavbar = styled.li`
+export const LiLinksNavbar = styled.li `
     display: flex;
     align-items:center;
     position: relative;
@@ -80,6 +95,9 @@ export const LiLinksNavbar = styled.li`
         background-color: #0074D9;
         transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
        
+    }
+     &:hover ${DivSubMenu} {
+        display: flex;
     }
     :hover:before{
         
@@ -112,10 +130,4 @@ export const LiLinksNavbar = styled.li`
             height:50px;
        }
     }
-`
-
-
-
-
-
-
+`;

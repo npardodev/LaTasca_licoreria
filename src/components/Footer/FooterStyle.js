@@ -48,7 +48,8 @@ export const FooterStyle = theme => {
                 margin: '1.3em',
 
             },
-            '@media (max-width: 1200px)': {
+            '@media (max-width: 560px)': {
+
                 flexDirection: "column-reverse",
             },
 
@@ -78,7 +79,7 @@ export const FooterStyle = theme => {
 
         socialIcons: {
             '& .MuiSvgIcon-root': {
-                margin: '0.5em',
+                margin: '0.3em',
             }
 
         }

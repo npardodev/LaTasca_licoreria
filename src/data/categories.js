@@ -17,11 +17,11 @@ export const categories = {
         id: '4'
     },
     TEQUILA: {
-        name: 'Tequila',
+        name: 'Tequilas',
         id: '5'
     },
     VODKA: {
-        name: 'Vodka',
+        name: 'Vodkas',
         id: '6'
     },
     SALTY: {
@@ -29,27 +29,16 @@ export const categories = {
         id: '7'
     },
     RON: {
-        name: 'Ron',
+        name: 'Rons',
         id: '8'
     },
     CANDY: {
         name: 'Dulces',
         id: '9'
     },
-    OTHERS: {
-        name: 'Otros',
-        id: '9'
-    },
-    MALBEC: {
-        name: 'Malbec',
+    APERITIVES: {
+        name: 'Aperitivos',
         id: '10'
     },
-    CABERNET: {
-        name: 'Cabernet',
-        id: '11'
-    },
-    TANNAT: {
-        name: 'Tannat',
-        id: '12'
-    },
+
 };
