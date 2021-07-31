@@ -1,9 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { useHistory } from 'react-router-dom';
 
 export const Productos = ({productos}) => {
-   
+    const idItem = productos.id;
+    const idCategory = productos.categories[0].name;
+    const history = useHistory();
+    const handlerClick = (e) =>{ 
+        e.preventDefault();
+        history.push(`/products/${idCategory}/${idItem}`);
+    }
     return (        
         <CardProductos>
             <DivContainerImg>
@@ -11,7 +17,7 @@ export const Productos = ({productos}) => {
             </DivContainerImg>
             <h3>{productos.name}</h3>
             <DivPriceProduct> <p>{productos.price.formatted}</p><span></span></DivPriceProduct>
-            <BottonProducto>Ver mas</BottonProducto>
+            <BottonProducto onClick={(e) => handlerClick(e)}>Ver mas</BottonProducto >
         </CardProductos>
     )
 }
