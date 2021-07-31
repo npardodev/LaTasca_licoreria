@@ -4,7 +4,6 @@ export const FooterStyle = theme => {
 
     return ({
 
-
         footer: {
             margin: '0',
             padding: '1rem',
@@ -35,15 +34,24 @@ export const FooterStyle = theme => {
                 fontSize: '0.9em',
                 color: 'white',
                 padding: '0.4em',
-
             }
-
         },
         footerColumns: {
             display: "flex",
             justifyContent: "space-around",
             alignItems: "center",
             textAlign: "center",
+            flexDirection: "row",
+
+            '& div': {
+                padding: '0',
+                margin: '1.3em',
+
+            },
+            '@media (max-width: 1200px)': {
+                flexDirection: "column-reverse",
+            },
+
         },
 
         icons: {
@@ -55,18 +63,17 @@ export const FooterStyle = theme => {
             '& img': {
                 width: 'clamp(3em, 5em, 6em)',
                 height: ' clamp(3em, 5em, 6em)',
-
             }
         },
+
         footerPayment: {
             alignItems: "center",
             textAlign: "center",
 
             '& img': {
-                width: 'clamp(29em, 31em, 32em)',
-                height: ' clamp(2em, 2.2em, 2.5em)',
+                width: '85vh',
+                height: ' clamp(1.8em, 2em, 2.2em)',
             }
-
         },
 
         socialIcons: {

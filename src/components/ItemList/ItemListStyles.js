@@ -18,6 +18,7 @@ export const ItemListStyles = theme => {
             gridGap: '1em',
             backgroundColor: '#ffff',
             margin: '0',
+            justifyItems: 'center',
             '@media (max-width: 1200px)': {
                 gridTemplateColumns: 'repeat(3, 1fr)',
             },

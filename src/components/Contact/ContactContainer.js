@@ -6,7 +6,6 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PhoneIcon from '@material-ui/icons/Phone';
 import ScheduleIcon from '@material-ui/icons/Schedule';
-import { commonStyles } from './../../styles/commonStyles.js';
 
 const useStyles = makeStyles((theme) => ContactStyle(theme));
 

@@ -9,9 +9,6 @@ import { Marcas } from '../components/Home/nuestras_marcas/Marcas'
 const HomeWiew = () => {
     
     const productos = useSelector(store => store.productsApi.array)
-    console.log(productos)
-
-
 
     return (
         <HomeContainer>

@@ -26,10 +26,7 @@ export const ItemListContainer = () => {
     
 
     if (productos!== null && productos!== undefined){
-        console.log(productos[0].categories);
-        filterData = productData.filter((item)=> item.categories[0].name === idCat);
-        //console.log(filterData);
-
+        filterData = productData.filter((item)=> item.categories.find(x => x.name === idCat));
     }
 
 

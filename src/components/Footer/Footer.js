@@ -43,7 +43,6 @@ export const Footer = () => {
                                 <div className={classes.socialIcons} >
                                     <InstagramIcon style={{ color: commonStyles.tercery.main }} />
                                     <FacebookIcon style={{ color: commonStyles.tercery.main }} />  
-                                    <MailOutlinedIcon style={{ color: commonStyles.tercery.main }}  /> 
                                 </div>                         
                                 <h5>@licorerialatasca</h5>
                             </div>
