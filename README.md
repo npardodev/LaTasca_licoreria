@@ -1,8 +1,9 @@
 
 <p align="center">
+    
+<img align="center" src="https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png" data-canonical-src="https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png" width="200" height="200" />
+
   <h2 align="center">La Tasca Licoreria - Website</h2>
-  
-<img src="https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png" data-canonical-src="https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png" width="200" height="200" />
 
 </p>
 
