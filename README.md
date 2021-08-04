@@ -1,4 +1,4 @@
-![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png)
+![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267674-71a296b4-c0d3-45ae-9e40-21b24872e0da.png | width=100)
 
 <p align="center">
   <h2 align="center">La Tasca Licoreria - Website</h2>
