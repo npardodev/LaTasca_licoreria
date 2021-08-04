@@ -11,9 +11,9 @@ En este caso el requerimiento fue realizar la web de una tienda de bebidas.
 
 Integrantes:
 
-* ** Hernán - *Diseñador UX UI* - [villanuevand](https://github.com/villanuevand)
-* Alfredo Zen  - *Programador Web* - [fulanitodetal](#fulanito-de-tal)
-* Nicolas Pardo - *Programador Web* - [fulanitodetal](#fulanito-de-tal)
+* Hernán - *Diseñador UX UI* - [villanuevand](https://github.com/villanuevand)
+* Alfredo - *Programador Web* - [Alfredo-Zen](#https://github.com/Alfredo-Zen)
+* Nicolas Pardo - *Programador Web* - [npardodev](#https://github.com/npardodev/)
 
 ## Descripción
 
