@@ -46,7 +46,7 @@ Se realizó la integración del servicio de commercejs como  base de datos en la
 
 ## Construido con 🛠️
 
-* [ReactJs](https://reactjs.org/) - Framework para Js
+* [ReactJs](https://reactjs.org/) - Framework para js
 * [Github](https://github.org/) - Versionado
 * [Figma](https://www.figma.com/) - Diseño UX
 
