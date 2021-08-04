@@ -79,7 +79,7 @@ export const ContactStyle = theme => {
             },
         },
 
-        '@media (max-width: 992px)': {
+        '@media (max-width: 960px)': {
 
             contactContainer: {
                 gridTemplateColumns: 'repeat(1, 1fr)',

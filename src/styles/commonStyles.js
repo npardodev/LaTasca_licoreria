@@ -5,19 +5,14 @@ export const commonStyles = {
         secondary: "''Roboto', sans-serif",
     },
     primary: {
-        light: '#ffffff',
-        main: '#EB741D', //naranja
-        dark: '#bf6220',
+        main: '#EB741D',
         contrastText: '#ffffff',
     },
     secondary: {
-        light: '#ffffff',
-        main: '#D68E5D', //negro
-        dark: '#212121',
-        contrastText: '#ffffff',
+        main: '#D68E5D',
     },
     tercery: {
-        main: '#F7F5F0' //cremita claro
+        main: '#F7F5F0'
     }
 
 };

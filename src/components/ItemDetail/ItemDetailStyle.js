@@ -66,20 +66,15 @@ export const ItemDetailStyle = theme => {
             },
         },
 
-
         actualPrice: {
             textDecoration: 'none',
             fontSize: '1.5em',
-
         },
-
         offerPrice: {
             textDecoration: 'line-through',
             fontSize: '0.9em',
             padding: '1em',
-
         },
-
         CustomSelectComponent: {
             width: '20%',
             textAlign: 'start',
@@ -109,7 +104,63 @@ export const ItemDetailStyle = theme => {
             },
         },
 
+        '@media (max-width: 960px)': {
 
+            productItem: {
+
+                gridTemplateColumns: 'repeat(1, 1fr)',
+                margin: '0',
+                padding: '0',
+
+                ' & img': {
+                    padding: '3rem',
+                    paddingBottom: '0rem',
+                },
+            },
+            productDetails: {
+                margin: '2em',
+                padding: '3em',
+                textAlign: 'center',
+                alignItems: 'center',
+                justifyContent: 'center',
+
+                '& h3': {
+                    textAlign: 'center',
+                    paddingBottom: '0.4em'
+                },
+
+                '& h4': {
+                    textAlign: 'center',
+                    marginRight: '0%',
+                },
+
+                '& h6': {
+                    fontWeight: '300',
+                },
+
+                '& p': {
+                    textAlign: 'center',
+                    marginRight: '0%',
+                    textAlign: 'justify',
+                },
+            },
+
+            sign: {
+                textAlign: 'center',
+                alignItems: 'center',
+                margin: '0em',
+                padding: '0em',
+                '& p': {
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    fontWeight: '100',
+                    color: 'black',
+                    fontSize: '0.8em',
+                    margin: '0em',
+                    padding: '0em',
+                },
+            },
+        }
 
     })
 };
