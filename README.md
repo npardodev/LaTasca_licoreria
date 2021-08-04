@@ -4,6 +4,8 @@
 Este repositorio forma parte del proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
 En este caso el requerimiento fue realizar la web de una tienda de bebidas.
 
+Integrantes:
+
 ## Descripción
 
 El sitio ofrece, a grandes rasgos, 4 secciones:
@@ -33,6 +35,11 @@ Se realizó la integración del servicio de commercejs como  base de datos en la
 ![image](https://user-images.githubusercontent.com/83429848/128266011-311c103b-ee76-45c1-8a66-f01373db2db9.png)
 ![image](https://user-images.githubusercontent.com/83429848/128266100-8f59834d-c7fd-4b6e-a921-03a54e3022ad.png)
 
+## Construido con 🛠️
+
+* [ReactJs](https://reactjs.org/) - El framework Utilizado
+* [Github](https://github.org/) - Versionado
+* [Figma](https://www.figma.com/) - Diseño UX
 
 
 
