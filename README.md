@@ -1,14 +1,35 @@
 
 # La Tasca Licoreria - Website
 
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Best-README-Template</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</p>
+
 Este repositorio forma parte del proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
 En este caso el requerimiento fue realizar la web de una tienda de bebidas.
 
 Integrantes:
 
-* ** Hernán ** - *Diseñador UX UI* - [hernánn](https://github.com/)
-* ** Nicolas Pardo ** - *Programador Web* - [npardodev](#https://github.com/npardodev/)
-* ** Alfredo Zen ** - *Programador Web* - [Alfredo-Zen](https://github.com/Alfredo-Zen)
+* ** Hernán - *Diseñador UX UI* - [villanuevand](https://github.com/villanuevand)
+* Alfredo Zen  - *Programador Web* - [fulanitodetal](#fulanito-de-tal)
+* Nicolas Pardo - *Programador Web* - [fulanitodetal](#fulanito-de-tal)
 
 ## Descripción
 
