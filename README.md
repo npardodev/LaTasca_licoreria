@@ -1,12 +1,10 @@
 
 <p align="center">    
-<img align="center" src="https://user-images.githubusercontent.com/83429848/128268101-b1e714b3-4e9f-4503-9a5e-a4be40fdb611.png" data-canonical-src="https://user-images.githubusercontent.com/83429848/128268101-b1e714b3-4e9f-4503-9a5e-a4be40fdb611.png" width="200" height="200" />
-
+  <img align="center" src="https://user-images.githubusercontent.com/83429848/128268101-b1e714b3-4e9f-4503-9a5e-a4be40fdb611.png" data-canonical-src="https://user-images.githubusercontent.com/83429848/128268101-b1e714b3-4e9f-4503-9a5e-a4be40fdb611.png" width="200" height="200" />
   <h2 align="center">La Tasca Licoreria - Website</h2>
-
 </p>
 
-Este repositorio forma parte del proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
+Este repositorio forma parte del Proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
 En este caso el requerimiento fue realizar la web de una tienda de bebidas.
 
 Integrantes:
