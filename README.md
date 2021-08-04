@@ -1,8 +1,8 @@
 
+    ![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267550-8ed9c327-ffe1-41a3-9bce-c5aaca692ab1.png)
 
 <p align="center">
   <a href="https://github.com/npardodev/LaTasca_licoreria">
-    ![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267550-8ed9c327-ffe1-41a3-9bce-c5aaca692ab1.png)
   </a>
   <h2 align="center">La Tasca Licoreria - Website</h2>
 </p>
