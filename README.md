@@ -1,8 +1,9 @@
+![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267550-8ed9c327-ffe1-41a3-9bce-c5aaca692ab1.png)
 
 
 <p align="center">
   <a href="https://github.com/npardodev/LaTasca_licoreria">
-    <img src="![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267427-c9e0c18c-9c9a-4480-bae0-146b3b3e7df9.png)" alt="Logo" width="80" height="80">
+    <img src="" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">La Tasca Licoreria - Website</h2>
