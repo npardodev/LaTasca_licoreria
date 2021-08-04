@@ -8,19 +8,17 @@ Este repositorio forma parte del Proyecto Real de Coderhouse, el cual tiene como
 
 Integrantes:
 
-* Hernán Flores - *Diseñador UX UI* - [IamHernanFlores](#https://github.com/IamHernanFlores)
-* Alfredo Zen - *Programador Web* - [Alfredo-Zen](#https://github.com/Alfredo-Zen)
-* Nicolas Pardo - *Programador Web* - [npardodev](#https://github.com/npardodev/)
+* Hernán Flores - *Diseñador UX UI* - [IamHernanFlores](https://github.com/IamHernanFlores)
+* Alfredo Zen - *Programador Web* - [Alfredo-Zen](https://github.com/Alfredo-Zen)
+* Nicolas Pardo - *Programador Web* - [npardodev](https://github.com/npardodev/)
 
 ## Descripción
 
 El sitio ofrece, a grandes rasgos, 4 secciones:
 * Home ->pantalla de bienvenida, con los productos destacados, marcas trabajadas, etc.
-* Acerca nuestro -> breve resumen de la empresa
+* Acerca nuestro -> Breve resumen de la empresa
 * Contacto -> mapa y redes sociales
-* Productos -> Los productos según cada categoria (Vinos, Cervezas, Whiskys, Otros y Comestibles.
-
-Al clickear cada item se podrá acceder a la compra de los artículos requeridos, seleccionando la cantidad de items, los cuales se irán almacenando en el carrito de compras, para luego poder elegir en el checkout la forma de envío y las opciones de pago, dando por finalizada la órden. 
+* Productos -> Los productos según cada categoria (Vinos, Cervezas, Whiskys, Otros y Comestibles).
 
 
 ## Diseño
