@@ -1,24 +1,12 @@
 
 
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/npardodev/LaTasca_licoreria">
     <img src="![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267427-c9e0c18c-9c9a-4480-bae0-146b3b3e7df9.png)" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">La Tasca Licoreria - Website</h2>
 
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
 </p>
 
 Este repositorio forma parte del proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
