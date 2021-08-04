@@ -65,5 +65,5 @@ Se realizó la integración del servicio de commercejs como  base de datos en la
 * [Github](https://github.org/) - Versionado
 * [Figma](https://www.figma.com/) - Diseño UX
 
-
+`
 
