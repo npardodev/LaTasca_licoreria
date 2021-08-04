@@ -4,8 +4,7 @@
   <h2 align="center">La Tasca Licoreria - Website</h2>
 </p>
 
-Este repositorio forma parte del Proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
-En este caso el requerimiento fue realizar la web de una tienda de bebidas.
+Este repositorio forma parte del Proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real como escenario práctico. En este caso el requerimiento fue realizar la web de una tienda de bebidas.
 
 Integrantes:
 
@@ -22,6 +21,12 @@ El sitio ofrece, a grandes rasgos, 4 secciones:
 * Productos -> Los productos según cada categoria (Vinos, Cervezas, Whiskys, Otros y Comestibles.
 
 Al clickear cada item se podrá acceder a la compra de los artículos requeridos, seleccionando la cantidad de items, los cuales se irán almacenando en el carrito de compras, para luego poder elegir en el checkout la forma de envío y las opciones de pago, dando por finalizada la órden. 
+
+
+## Diseño
+
+[DiseñoEnFigma](https://www.figma.com/file/1uPE8LdQxyHEMDYL1UzaUY/Proyecto-Coder-1-UX-UI-Licorer%C3%ADa-La-Tasca?node-id=0%3A1) para conocer como desplegar el proyecto.
+
 
 ### Display
 
