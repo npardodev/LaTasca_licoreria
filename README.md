@@ -1,13 +1,10 @@
-![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267550-8ed9c327-ffe1-41a3-9bce-c5aaca692ab1.png)
 
 
 <p align="center">
   <a href="https://github.com/npardodev/LaTasca_licoreria">
-    <img src="" alt="Logo" width="80" height="80">
+    ![imgAboutUs](https://user-images.githubusercontent.com/83429848/128267550-8ed9c327-ffe1-41a3-9bce-c5aaca692ab1.png)
   </a>
-
   <h2 align="center">La Tasca Licoreria - Website</h2>
-
 </p>
 
 Este repositorio forma parte del proyecto Real de Coderhouse, el cual tiene como finalidad la creación de un sitio Web aplicado a un caso real. 
