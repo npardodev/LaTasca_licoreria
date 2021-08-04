@@ -8,7 +8,7 @@ Este repositorio forma parte del Proyecto Real de Coderhouse, el cual tiene como
 
 Integrantes:
 
-* Hernán Flores - *Diseñador UX UI* - [IamHernanFlores](https://github.com/IamHernanFlores)
+* Hernán Flores - *Diseñador UX UI* - [IamHernanFlores](#https://github.com/IamHernanFlores)
 * Alfredo Zen - *Programador Web* - [Alfredo-Zen](#https://github.com/Alfredo-Zen)
 * Nicolas Pardo - *Programador Web* - [npardodev](#https://github.com/npardodev/)
 
