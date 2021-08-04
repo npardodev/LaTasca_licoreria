@@ -13,6 +13,7 @@ export const MarcasContent = styled.div`
         font-size: 2rem;
         margin-bottom: 60px;
         margin-top: 60px;
+        text-decoration: underline;
         span{
             font-weight: 100;
         }

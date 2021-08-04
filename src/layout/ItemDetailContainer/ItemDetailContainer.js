@@ -13,7 +13,7 @@ export const ItemDetailContainer = () => {
     
     const productos = useSelector(store => store.productsApi.array)
     const {idItem} = useParams();
-    const [error, setError] = useState('');
+  
     const [showError, setShowError] = useState(false);
     
     const filterData = productos.filter(item => item.id === idItem);  
@@ -23,7 +23,7 @@ export const ItemDetailContainer = () => {
         <ItemDetail item={filterData}/>
         <Snackbar open={showError} autoHideDuration={3000} >
             <Alert onClose={() => setShowError(false)} severity="error">
-                {error}
+                {'error'}
             </Alert>
         </Snackbar>
         <Container maxWidth="lg">

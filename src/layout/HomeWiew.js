@@ -9,36 +9,29 @@ import { Marcas } from '../components/Home/nuestras_marcas/Marcas'
 const HomeWiew = () => {
     
     const productos = useSelector(store => store.productsApi.array)
-    let Vinos2Categorias = []
-    let VinosDestacados = []
-    let VinosNuevos = []
+    let ProductosDestacados 
+    let ProductosNuevos 
 
-    if (productos!== null && productos!== undefined){
     
-        productos.forEach((item)=>{
+    if (productos !== null && productos !== undefined){
 
-            if(item.categories.length === 2){
-                Vinos2Categorias.push(item)
-            }  
-        });
-    
-    }
-    if (Vinos2Categorias !== null && Vinos2Categorias !== undefined){
-    
-        Vinos2Categorias.forEach((item)=>{
-
-           if(item.categories[1].name === 'productos destacados'){
-               VinosDestacados.push(item)
-           }else if(item.categories[1].name === 'Productos Nuevos'){
-                VinosNuevos.push(item)
-           }
-        });
+        let ProductoDestacadosEC = productos.filter((item)=> item.categories.find(x => x.name === 'productos destacados'));
+        ProductosDestacados = ProductoDestacadosEC
+        let ProductosNuevosEC = productos.filter((item)=> item.categories.find(x => x.name === 'Productos Nuevos'));
+        ProductosNuevos = ProductosNuevosEC
+       
     }
 
+    
+
+    
+    
+
+    
     return (
         <HomeContainer>
             <Header/>
-            <ProductosCarrusel   productos_Destacados={VinosDestacados} productos_Nuevos={VinosNuevos}/>
+            <ProductosCarrusel   productos_Destacados={ProductosDestacados} productos_Nuevos={ProductosNuevos}/>
             <Marcas/>
         </HomeContainer>
     )

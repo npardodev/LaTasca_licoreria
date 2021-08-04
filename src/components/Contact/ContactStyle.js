@@ -1,4 +1,4 @@
-import { commonStyles } from './../../styles/commonStyles.js';
+// import { commonStyles } from './../../styles/commonStyles.js';
 
 export const ContactStyle = theme => {
 

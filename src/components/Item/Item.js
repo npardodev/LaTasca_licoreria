@@ -38,7 +38,7 @@ export const Item = ({item , onClick, onFocus}) => {
                     <h4>{`$${item.price.formatted}`}</h4>
                     <h5>{`$999,00`}</h5>
                 </div>
-                <Button className= {classes.Button}>Ver más</Button>
+                <Button onClick={(e) => handlerClick(e)} className= {classes.Button}>Ver más</Button>
             </div>
 
         </div>

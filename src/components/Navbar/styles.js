@@ -1,21 +1,69 @@
 import styled from 'styled-components'
 
 
+export const DivContenedorEnlaces = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+`;
+export const ArrowIcon = styled.div`
+    height: 30px;
+    width: 50px;
+    position: relative;
+    right: 0px;
+    z-index: 1000;
+    cursor: pointer;
+    z-index: 100;
+   
+   div{
+        position: absolute;
+        background-color: #232323;
+        margin: 5px;
+        pointer-events: none;
+        width: 20px;
+        height: 3px;
+        bottom: 5px;
+        :nth-child(1){
+            
+            right: 4px;
+            transform: rotate(-45deg);
+        }
+        :nth-child(2){
+            
+            left: 4px;
+            transform: rotate(45deg);
+        }
+   }
+   @media (min-width: 768px){
+        display: none;
+   }
+`;
+
 export const DivSubMenu = styled.div `
+  
     position: absolute;
     display: none;
     width:max-content;
-    bottom:-70px;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    padding: 10px 30px;
-    z-index: 100;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color:#ffffff;
+    z-index: 1000;
+    background-color:#fff;
+   
     a{
-        width: max-content;
-        margin: 5px 0px;
+        padding: 16px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    @media (max-width: 768px) {
+        display: block;
+        width: 100%;
+        position: relative;
+        
+        height:0px;
+        overflow: hidden;
+        
+        
+        
+        
     }
 `;
 
@@ -72,19 +120,12 @@ export const NavNavbar = styled.nav `
 
 
 
-
-
-
-
-
-
 export const LiLinksNavbar = styled.li `
-    display: flex;
-    align-items:center;
+    display: inline-block;
     position: relative;
-    cursor: pointer;
     z-index: 200;
     border-bottom: solid 3px #fff;
+  
     :before{
         content: '';
         position: absolute;
@@ -96,9 +137,10 @@ export const LiLinksNavbar = styled.li `
         transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
        
     }
-     &:hover ${DivSubMenu} {
-        display: flex;
-    }
+
+   
+    
+
     :hover:before{
         
         left: 0;
@@ -113,21 +155,37 @@ export const LiLinksNavbar = styled.li `
         z-index: 200;
         text-decoration: none;
         color: #232323;
+    
         
     }
     img{
         height:35px;
+        cursor: pointer;
+    }
+    @media (min-width: 768px){
+        &:hover ${DivSubMenu} {
+            display:flex;
+            flex-direction: column;
+        }
     }
     @media (max-width: 768px) {
-       
-       a{
-           width: 100%;
-            padding: 20px 20px;
-            margin-left: 20px;
+
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+
+       a{   
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+            width: 80%;
+            z-index: 100;
+          
        }
        img{
             margin-left: 40px;
             height:50px;
+            width: 50px;
        }
     }
 `;

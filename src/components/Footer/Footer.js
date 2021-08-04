@@ -2,14 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import MailOutlinedIcon from '@material-ui/icons/MailOutlined';
+// import MailOutlinedIcon from '@material-ui/icons/MailOutlined';
 import {FooterStyle} from './FooterStyle.js';
 import { commonStyles } from './../../styles/commonStyles.js';
 import PhoneIcon from '@material-ui/icons/Phone';
 import ScheduleIcon from '@material-ui/icons/Schedule';
 import PeopleIcon from '@material-ui/icons/People';
 import logoFooter from '../../assets/img/IconosFooter/logoFooter.png'
-import imgPayments from '../../assets/img/pagos/payments.png'
+// import imgPayments from '../../assets/img/pagos/payments.png'
 
 const useStyles = makeStyles((theme) => FooterStyle(theme));
 
@@ -19,9 +19,7 @@ export const Footer = () => {
 
     return (<>
                 <div>
-                    <div className={classes.footerPayment}>
-                        <img src={imgPayments} alt="Métodos de pago"></img>
-                    </div>
+                   
                     <footer className={classes.footer}>
                         <div className={classes.footerColumns} >
                             <div>
@@ -41,8 +39,8 @@ export const Footer = () => {
                                 <PeopleIcon style={{ color: commonStyles.tercery.main }}/>
                                 <h4 >Seguinos</h4>
                                 <div className={classes.socialIcons} >
-                                    <InstagramIcon style={{ color: commonStyles.tercery.main }} />
-                                    <FacebookIcon style={{ color: commonStyles.tercery.main }} />  
+                                    <a href='https://www.instagram.com/licorerialatasca/'><InstagramIcon style={{ color: commonStyles.tercery.main }} /></a>
+                                    <a href='https://www.facebook.com/licorerialatasca/'><FacebookIcon style={{ color: commonStyles.tercery.main }} />  </a>
                                 </div>                         
                                 <h5>@licorerialatasca</h5>
                             </div>

@@ -26,6 +26,7 @@ export const DivProductsContent = styled.div`
     h5{
         margin-bottom: 30px;
         font-size: 2em;
+        text-decoration: underline;
        
         span{
             font-weight: 100;
