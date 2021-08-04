@@ -59,7 +59,7 @@ const Navbar = () => {
                     <LiLinksNavbar><Link to="/" onClick={() => SetActive(!active)}  >Home</Link></LiLinksNavbar>
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link to={`/products/${categories.WINES.name}`} >Vinos</Link>
+                            <Link onClick={() => SetActive(!active)} to={`/products/${categories.WINES.name}`} >Vinos</Link>
                             <ArrowIcon  onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                         

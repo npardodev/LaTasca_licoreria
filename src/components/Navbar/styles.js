@@ -126,28 +126,7 @@ export const LiLinksNavbar = styled.li `
     z-index: 200;
     border-bottom: solid 3px #fff;
   
-    :before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 0px;
-        height: 3px;
-        background-color: #0074D9;
-        transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
-       
-    }
-
    
-    
-
-    :hover:before{
-        
-        left: 0;
-        right: auto;
-        width: 100%;
-        
-    }
     
     
    
@@ -163,6 +142,28 @@ export const LiLinksNavbar = styled.li `
         cursor: pointer;
     }
     @media (min-width: 768px){
+
+        :before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0px;
+        height: 3px;
+        background-color: #0074D9;
+        transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+       
+        }
+
+        :hover:before{
+            
+            left: 0;
+            right: auto;
+            width: 100%;
+            
+        }
+
+
         &:hover ${DivSubMenu} {
             display:flex;
             flex-direction: column;
