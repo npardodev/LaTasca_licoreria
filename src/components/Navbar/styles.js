@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
 
+
+
 export const DivContenedorEnlaces = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     a{
-        display: flex;
+      display: flex;
+      justify-content: space-around;
     }
 `;
 export const ArrowIcon = styled.div`

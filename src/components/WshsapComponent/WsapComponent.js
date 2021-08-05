@@ -5,7 +5,7 @@ export const WsapComponent = () => {
 
    
     return (
-        <ContainerIMGWhsap href="https://api.whatsapp.com/send?phone=+541161033615&text=Hola!%20quería%20saber%20si%20tenían%20disponible..">
+        <ContainerIMGWhsap href="https://api.whatsapp.com/send?phone=094270220&text=Hola!%20quería%20saber%20si%20tenían%20disponible..">
             <img src={whatsapp} alt='whatsapp'/>
         </ContainerIMGWhsap>
     )
