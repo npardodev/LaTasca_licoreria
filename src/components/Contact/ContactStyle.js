@@ -36,6 +36,7 @@ export const ContactStyle = theme => {
             textAlign: 'center',
             alignItems: 'center',
             padding: '1em',
+            marginBottom:'20px',
 
             '& h2': {
                 padding: '1em',
@@ -83,6 +84,9 @@ export const ContactStyle = theme => {
 
             contactContainer: {
                 gridTemplateColumns: 'repeat(1, 1fr)',
+                padding:'0px 0px 0px 0px',
+                margin: '0px 0px 0px 0px',
+                
                 '& img': {
 
                 }

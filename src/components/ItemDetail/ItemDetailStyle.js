@@ -141,7 +141,7 @@ export const ItemDetailStyle = theme => {
                 '& p': {
                     textAlign: 'center',
                     marginRight: '0%',
-                    textAlign: 'justify',
+                    // textAlign: 'justify',
                 },
             },
 

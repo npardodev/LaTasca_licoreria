@@ -36,7 +36,7 @@ export const Item = ({item , onClick, onFocus}) => {
                 <h3>{item.name}</h3>
                 <div>
                     <h4>{`$${item.price.formatted}`}</h4>
-                    <h5>{`$999,00`}</h5>
+                    
                 </div>
                 <Button onClick={(e) => handlerClick(e)} className= {classes.Button}>Ver más</Button>
             </div>

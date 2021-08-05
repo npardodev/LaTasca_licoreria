@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { Alert } from '@material-ui/lab';
 import {Snackbar} from '@material-ui/core';
 import { ItemDetail } from '../../components/ItemDetail/ItemDetail';
@@ -17,7 +17,11 @@ export const ItemDetailContainer = () => {
     const [showError, setShowError] = useState(false);
     
     const filterData = productos.filter(item => item.id === idItem);  
+    
+    useEffect(() => {
         
+        window.scroll(100, 0)
+    }, [])
 
     return <>
         <ItemDetail item={filterData}/>

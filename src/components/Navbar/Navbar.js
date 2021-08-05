@@ -5,6 +5,7 @@ import IconInstagram from '../../assets/img/IconosHome/IconoInstagram.png'
 import IconFacebook from '../../assets/img/IconosHome/IconoFacebook.png'
 import { categories }  from '../../data/categories.js';
 import styled from 'styled-components'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
 import 
@@ -59,7 +60,7 @@ const Navbar = () => {
                     <LiLinksNavbar><Link to="/" onClick={() => SetActive(!active)}  >Home</Link></LiLinksNavbar>
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link onClick={() => SetActive(!active)} to={`/products/${categories.WINES.name}`} >Vinos</Link>
+                            <Link onClick={() => SetActive(!active)} to={`/products/${categories.WINES.name}`} >Vinos <ArrowDropDownIcon/></Link>
                             <ArrowIcon  onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                         
@@ -71,7 +72,7 @@ const Navbar = () => {
                     
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link to={`/products/${categories.BEERS.name}`} onClick={() => SetActive(!active)}>Cervezas</Link>
+                            <Link to={`/products/${categories.BEERS.name}`} onClick={() => SetActive(!active)}>Cervezas <ArrowDropDownIcon/></Link>
                             <ArrowIcon onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                     
@@ -84,7 +85,7 @@ const Navbar = () => {
                     
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link  to={`/products/${categories.WHISKY.name}`} onClick={() => SetActive(!active)}>Whiskys</Link>
+                            <Link  to={`/products/${categories.WHISKY.name}`} onClick={() => SetActive(!active)}>Whiskys <ArrowDropDownIcon/></Link>
                             <ArrowIcon onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                    
@@ -97,7 +98,7 @@ const Navbar = () => {
                     </LiLinksNavbar>
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link to={`/products/${`Otros`}`} onClick={() => SetActive(!active)}>Otros</Link>
+                            <Link to={`/products/${`Otros`}`} onClick={() => SetActive(!active)}>Otros <ArrowDropDownIcon/></Link>
                             <ArrowIcon onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                     
@@ -112,7 +113,7 @@ const Navbar = () => {
 
                     <LiLinksNavbar>
                         <DivContenedorEnlaces>
-                            <Link to={`/products/${`Comestibles`}`} onClick={() => SetActive(!active)}>Comestibles</Link>
+                            <Link to={`/products/${`Comestibles`}`} onClick={() => SetActive(!active)}>Comestibles <ArrowDropDownIcon/></Link>
                             <ArrowIcon onClick={HandleOpenMenu}><div></div><div></div></ArrowIcon>
                         </DivContenedorEnlaces>
                    

@@ -26,7 +26,7 @@ export default function ProductsReducer(state = dataInicial , action){
 export const ConsultaApi = () => async (dispactch,getState) =>{
     try {
         
-        const { data } = await commerce.products.list()
+        const { data } = await commerce.products.list({limit: 200,})
         dispactch({
             type:CONSULTA_API,
             payload:data

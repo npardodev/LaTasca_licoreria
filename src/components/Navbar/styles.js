@@ -6,6 +6,9 @@ export const DivContenedorEnlaces = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    a{
+        display: flex;
+    }
 `;
 export const ArrowIcon = styled.div`
     height: 30px;

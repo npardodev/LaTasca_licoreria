@@ -12,7 +12,6 @@ const HomeWiew = () => {
     let ProductosDestacados 
     let ProductosNuevos 
 
-    
     if (productos !== null && productos !== undefined){
 
         let ProductoDestacadosEC = productos.filter((item)=> item.categories.find(x => x.name === 'productos destacados'));
