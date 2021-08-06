@@ -4,8 +4,9 @@ import whatsapp from '../../assets/img/icons8-whatsapp-96.png'
 export const WsapComponent = () => {
 
    
+    const PHONE_NUMBER = '+598094270220';
     return (
-        <ContainerIMGWhsap href="https://api.whatsapp.com/send?phone=094270220&text=Hola!%20quería%20saber%20si%20tenían%20disponible..">
+        <ContainerIMGWhsap href={`https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=Hola!%20quería%20saber%20si%20tenían%20disponible..`}>
             <img src={whatsapp} alt='whatsapp'/>
         </ContainerIMGWhsap>
     )
