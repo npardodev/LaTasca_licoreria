@@ -52,7 +52,6 @@
   },
   "devDependencies": {
     "@iconify-icons/simple-icons": "^1.1.30",
-    "@iconify/react": "^1.1.4",
-    "gh-pages": "^3.2.3"
+    "@iconify/react": "^1.1.4"
   }
 }

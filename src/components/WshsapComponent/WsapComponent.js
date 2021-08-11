@@ -13,7 +13,6 @@ export const WsapComponent = () => {
 }
 
 
-
 const ContainerIMGWhsap = styled.a`
     width: 70px;
     height: 70px;
